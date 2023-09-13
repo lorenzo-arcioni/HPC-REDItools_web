@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HPC-REDItools - Guide</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+    <link rel="icon" type="image/x-icon" href="../static/logo.ico">
+    <script src="../static/scripts.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="start.html">Start</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+<div class="container">
+    <div class="title">
+        <div class="best" style="display: flex; align-items: center;">
+            <img src="../static/logo.png" width="100" style="margin: auto;">
+            <h1>HPC-T-Annotator</h1>
+            <img src="../static/logo.png" width="100" style="margin: auto;">
+        </div>
+        <h2 id="subtitle">Interface Guide</h2>
+    </div>
+
+    <div class="description">
+        <p>Welcome to the user guide for the HPC-T-Annotator interface. This guide will help you understand and utilize the features of the interface to configure and generate a customized software package for parallelization tasks involving annotation software. Follow the steps below to effectively use the interface.</p>
+    </div>
+    <div class="block">
+        <h3>Step 1: Workload Manager Settings</h3>
+        <div>
+            <p>Select a workload manager to configure settings:</p>
+
+            <ul>
+                <li>
+                    <input type="radio" id="slurm" value="slurm" name="workload_manager" onchange="toggleConfigurationPanel()" onload="toggleConfigurationPanel()">
+                    <label for="slurm"><strong>Slurm</strong></label>
+                </li>
+                <li>
+                    <input type="radio" id="none" value="none" name="workload_manager" checked onchange="toggleConfigurationPanel()" onload="toggleConfigurationPanel()">
+                    <label for="none"><strong>None</strong></label>
+                </li>
+            </ul>
+        </div>
+
+        <p>Based on your selection, different configuration options will be displayed.</p>
+
+        <!-- Slurm configuration settings description here -->
+        <div class="conf" id="slurmConfPanel" style="display: none;">
+            <h4>Slurm Configuration Settings</h4>
+            <p>Configure the settings for Slurm workload manager:</p>
+            <ul>
+                <li><strong>Account name</strong>: Specify the name of the account for job submission.</li>
+                <li><strong>Serial partition</strong>: Enter the name of the serial partition for single-threaded jobs.</li>
+                <li><strong>Parallel partition</strong>: Provide the name of the parallel partition for multi-threaded jobs.</li>
+                <li><strong>Number of processes</strong>: Set the desired number of processes.</li>
+                <li><strong>Number of threads</strong>: Define the number of threads per process.</li>
+                <li><strong>Wall-time(hours)</strong>: Specify the maximum duration of the job in hours.</li>
+                <li><strong>Memory per process:</strong> Enter the memory requirement per process.</li>
+            </ul>
+        </div>
+
+        <!-- Base configuration settings description here -->
+        <div class="conf" id="noneConfPanel">
+            <h4>Base Configuration Settings</h4>
+            <p>Configure basic settings when no workload manager is selected:</p>
+            <ul>
+                <li><strong>Number of processes</strong>: Set the desired number of processes.</li>
+                <li><strong>Threads</strong>: Specify the number of threads for processing.</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="block">
+        <h3>Step 2: Alignment Software Settings</h3>
+        <div>
+            <p>Select an annotation tool and configure settings:</p>
+
+            <ul>
+                <li>
+                    <label for="blast"><strong>Blast</strong></label>
+                </li>
+                <li>
+                    <label for="diamond"><strong>Diamond</strong></label>
+                </li>
+            </ul>
+        </div>
+
+        <p>Configure the settings for the selected annotation software:</p>
+        <ul>
+            <li><strong>Select an annotation tool</strong>: Choose either Blast or Diamond as the annotation tool.</li>
+            <li><strong>Choose a tool</strong>: Select the specific tool to use (e.g., Blastp or Blastx).</li>
+            <li><strong>Database absolute path</strong>: Provide the absolute path to the annotation database.</li>
+            <li><strong>Input file absolute path</strong>: Specify the absolute path to the input file for annotation.</li>
+            <li><strong>Binary absolute path</strong>: Enter the absolute path to the annotation software binary.</li>
+            <li><strong>Outformat</strong>: Define the output format for annotation results using double quotes (e.g., "6 qseqid sseqid...").</li>
+            <li><strong>Additional options</strong> Enter any additional options that you would like to access and input any extra parameters required.</li>
+        </ul>
+
+        <p>In note, for <strong>Additional options</strong> field, only options related to computation are accepted; options indicating the usage of threads and input/output 
+            file names are not accepted. 
+            So the options -p and -o for diamond or -out and -num_threads for blast are not accepted!
+            Use this field to provide any additional command-line options or parameters for the annotation tool. These options should be entered as you would on the command line, separated by spaces.
+            For example, you can specify parameters like "-evalue 1e-5 -max_target_seqs 10" for a BLAST execution.</p>
+    </div>
+    <div class="block">
+        <h3>Generating the Software Package</h3>
+        <div>
+            <p>After configuring the settings for both workload manager and annotation software, you can:</p>
+
+            <ul>
+                <li>Click the <strong>Reset the Fields</strong> button to clear all entered data.</li>
+                <li>Click the <strong>Generate</strong> button to create the customized software package.</li>
+            </ul>
+        </div>
+    
+
+        <p>Once generated, you can download the software package in TAR format.</p>
+    </div>
+    <div class="description">  
+        <p style="text-align: center;">The following step must be done on the HPC cluster.</p>
+    </div>
+    <div class="block">
+        <h3>Extract the TAR archive and run</h3>
+        <div>
+            <p>After downloading the TAR archive (and, if you want, uploading the archive on HPC cluster) you have to unTAR the archive and then run the start 
+               script.
+            </p>
+        </div>
+        <div class="code-cell">
+            tar -xf hpc-t-annotator.tar -C /path/to/myfolder/hpc-t-annotator<br>
+            cd /path/to/myfolder/hpc-t-annotator
+        </div>
+        <p>And the, if you are on HPC cluster with Slurm workload manager</p>
+        <div class="code-cell">
+            sbatch start.sh
+        </div>
+        <p>Else, if you are on workload manager less architecture</p>
+        <div class="code-cell">
+            bash start.sh
+        </div>
+    </div>
+    <div class="description">  
+        <p style="text-align: center;">Once the entire computation process has ended (check the general.log file for the status), the final result will be in tmp/final_blast.tsv file.</p>
+    </div>
+    <div class="block">
+        <h3>Some useful monitoring commands</h3>
+        <div>
+            <h4>Check that all jobs are finished</h4>
+        </div>
+        <p>If all jobs are finished, you can check the logs by running this command:</p>
+        <div class="code-cell">
+            cat general.log
+        </div>
+        <p>That will display something like this:</p>
+        <div class="code-cell">
+            Starting timestamp#2023-08-05 15:22:02<br>
+            Input file: ./input/input.fa<br>
+            Processes: 300<br>
+            Out-format: 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore<br>
+            Diamond: no<br>
+            Tool: blastx<br>
+            Binary: /g100/home/userexternal/larcioni/BLAST-2.14.0+/bin/blastx<br>
+            Database: /g100_scratch/userexternal/larcioni/DATABASES/NR/blast/blast<br>
+            Sequences: 36985<br>
+            Average runtime: 8:35:38<br><br>
+
+            Max runtime: 16:13:09<br><br>
+
+            Min runtime: 3:36:23<br><br>
+
+            Ending timestamp#2023-08-06 21:13:40<br>
+            Total elapsed time: 05:51:38
+        </div>
+        <div>
+            <h4>Check for errors</h4>
+        </div>
+        <p>You can check for jobs errors running these commands:</p>
+        <div class="code-cell">
+            # For general errors<br>
+            cat general.err
+        </div>
+        <div class="code-cell">
+            # For control script errors<br>
+            cat control.err
+        </div>
+        <div class="code-cell">
+            # For specific job errors<br>
+            cat tmp/*/general.err
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

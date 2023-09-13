@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8"> 
+    <title>HPC-REDItools - Start</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+    <link rel="icon" type="image/x-icon" href="../static/logo.ico">
+    <script src="../static/scripts.js" defer></script>        
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="start.html">Start</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="title">
+            <div class="best" style="display: flex; align-items: center;">
+                <img src="../static/logo.png" width="100" style="margin: auto;">
+                <h1>HPC-REDItools</h1>
+                <img src="../static/logo.png" width="100" style="margin: auto;">
+            </div>
+            <h2 id="subtitle">Generative Interface</h2>
+        </div>
+
+        <div class="description">
+            <p>To generate the parallel software for the RNA-editing analysis, 
+               please complete the two forms below: one pertaining to the settings of the workload manager, 
+               and the other concerning the details of the REDItools software package.</p>
+        </div>
+        
+        <form method="POST" id="form">
+            <div class="block" style="display: grid; grid-template-columns: auto 1fr; gap: 20px;">
+                <div>
+                    <div style="display: flex;">
+                        <h3>Workload manager settings</h3>
+                        <button class="help_settings" id="help_workload" type="button">
+                            <p style="margin-top: -1px; font-size: large;">?</p>
+                        </button>
+                    </div>
+                    <div class="workload">
+                        <h4>Select workload manager</h4>
+
+                        <input type="radio" id="slurm" value="slurm" name="workload_manager" onchange="toggleConfigurationPanel()" onload="toggleConfigurationPanel()">
+                        <label for="slurm">Slurm</label>
+                        <input type="radio" id="none" value="none" name="workload_manager" checked onchange="toggleConfigurationPanel()" onload="toggleConfigurationPanel()">
+                        <label for="none">None</label>
+                    </div>
+                
+                    <div class="conf" id="slurmConfPanel" style="display: none;">
+                        <h4>Slurm configuration settings</h4>
+
+                        <label for="Slurm_account_name"><b>Account name:</b> </label>
+                        <input type="text" name="Slurm_account_name" id="Slurm_account_name">
+                        Specify the name of the account for job submission.
+                        <br>
+                        <br>
+                        <label for="Spart"><b>Serial partition: </b></label>
+                        <input type="text" name="Slurm_serial_part" id="Slurm_serial_part">
+                        Partition with an hour of minimum wall-time execution and at least 5GB of RAM.
+                        <br>
+                        <br>
+                        <label for="Part"><b>Parallel partition:</b> </label>
+                        <input type="text" name="Slurm_parallel_part" id="Slurm_parallel_part">
+                        Provide the name of the parallel partition for multi-threaded jobs.
+                        <br>
+                        <br>
+                        <label for="Nthread"><b>Number of threads: </b></label>
+                        <input type="number" name="Slurm_Nthreads" id="Slurm_Nthreads" style="width: 40px;" min=1 value=1>
+                        Define the number of threads per process.
+                        <br>
+                        <br>
+                        <label for="Time"><b>Wall-time (hours):</b></label>
+                        <input type="number" name="Slurm_time" id="Time" style="width: 40px;" min=1 value=1>
+                        <U>Must be less then your parallel partition wall-time.</U>
+                        <br>
+                        <br>
+                        <label for="Mproces"><b>Memory per process (GB):</b></label>
+                        <input type="number" name="Slurm_Mprocess" id="Mprocess" style="width: 40px;" min=1 value=1>
+                        Enter the memory requirement per process.
+                    </div>
+
+                    <div class="conf" id="noneConfPanel">
+                        <h4>Base configuration settings</h4>
+                        
+                        <label for="Part">Threads</label>
+                        <input type="number" name="threads" id="threads" style="width: 40px;" min=1 value=1>
+                        Define the number of threads per process.
+                    </div>
+
+                </div>
+                <div class="icon" style="text-align: right;">
+                    <img src="../static/hpc-cluster.png" alt="HPC-cluster" style="width: 150px;">
+                </div>
+            </div>
+            <div class="description">  
+                <h3><U>Please note that</U></h3>
+                <p style="text-align: center;">It is absolutely mandatory to use the running machine absolute paths.</p>
+                <p style="text-align: center;">Make sure that there is enough memory available in the running area.</p>
+            </div>
+
+            <div class="block" style="display: grid; grid-template-columns: auto 1fr; gap: 20px;">
+                <div>
+                    <div style="display: flex;">
+                        <h3>REDItools Software settings</h3>
+                        <button class="help_settings" id="help_alignment" type="button">
+                            <p style="margin-top: -1px; font-size: large;">?</p>
+                        </button>
+                    </div>
+                    <div class="SAT">
+                        <label for="Part">Input directory absolute path *</label><br>
+                        <input class="long_input" type="text" name="ID_path" id="IF_path" size="110">
+                        <br>
+                        <br>
+                        <label for="Part">Absolute path to the reference genome *</label><br>
+                        <input class="long_input" type="text" name="REF_path" id="REF_path" size="110">
+                        <br>
+                        <br>
+                        <label for="Part">Absolute path of BED file containing target regions</label><br>
+                        <input class="long_input" type="text" name="BED_path" id="BED_path" size="110">
+                        <br>
+                        <br>
+                        <label for="Part">Absolute path to the file containing the splicing sites positions</label><br>
+                        <input class="long_input" type="text" name="SP_path" id="SP_path" size="110">
+                        <br>
+                        <br>
+                        <label for="Part">Absolute path to the file containing the omopolymeric positions</label><br>
+                        <input class="long_input" type="text" name="OMO_path" id="OMO_path" size="110">
+                        <br>
+                        <br>
+                        <label for="Part">Absolute path to write omopolymeric positions to</label><br>
+                        <input class="long_input" type="text" name="OM_path" id="OM_path" size="110">
+                        <br>
+                        <br>
+                        <label for="Part">Additional options</label> 
+                        <button id="help_add_options" type="button" style="height: 18px;"> 
+                            <p style="margin-top: -1.5px;">?</p>
+                        </button>
+                        <br>
+                        <input class="long_input" type="text" name="add_options" id="add_options" value="" size="110">
+
+                    </div>
+                </div>
+                <div class="icon" style="text-align: right;">
+                    <img src="../static/annotation.png" alt="Annotation" style="max-width: 150px;">
+                </div>
+                
+            </div>
+            <div class="buttons">
+                <button id="reset" type="reset"> 
+                    Reset the fields
+                </button>
+
+                <button id="sub_B" type="submit"> 
+                    Generate
+                </button>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
+

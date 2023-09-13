@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8"> 
+    <title>HPC-REDItools - Download</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+    <link rel="icon" type="image/x-icon" href="../static/logo.ico">
+    <script src="../static/scripts.js" defer></script>        
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="start.html">Start</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="title">
+            <div class="best" style="display: flex; align-items: center;">
+                <img src="../static/logo.png" width="100" style="margin: auto;">
+                <h1>HPC-T-Annotator</h1>
+                <img src="../static/logo.png" width="100" style="margin: auto;">
+            </div>
+            <h2 id="subtitle">Interface-less execution</h2>
+        </div>
+
+        <div class="description">
+            <p>If you have experience in running and developing bash scripts, you can use HPC-T-Annotator even without the assistance of the web interface by downloading the software directly from GitHub using the link below.</p>
+            <a class="github-button" href="https://github.com/lorenzo-arcioni/HPC-T-Annotator/archive/refs/heads/main.zip" target="_blank">Download from GitHub</a>
+            <p>After downloading and extracting the ZIP archive, you can proceed as follows: perform the code generation phase, upload (if necessary) the generated ZIP package to the HPC machine, and then start the computation.</p>
+        </div>
+
+        <div class="block">
+            <h3 style="padding: -100px;">Generation of code</h3>
+            <div><h4>Command-line generation</h4></div>
+
+            <p>Command-line example using the diamond suite.</p>
+            <div class="code-cell">
+./main.sh -i /home/user/assembly/slow_fast_degs_hs.fasta -b /home/user/BANCHE_OMOLOGY/diamond -T blastx -t 48 -D -d /home/user/BANCHE_OMOLOGY/NR/nr.dmnd -p 50
+            </div>
+            <p>In this case, we will divide the computation (and the input file) into 50 parts that will be processed simultaneously (with 48 threads each). In the end, the outputs of the 50 jobs will be combined into a single file.</p>
+            <p>Another other example using the BLAST</p>
+            <div class="code-cell">
+./main.sh -i project/assembly/slow_fast_degs_hs.fasta -b /home/blast/blastx -T blastx -t 48 -d /home/user/DB/nr -p 100
+            </div>
+            In this case we have split the computation into 100 jobs using the BLAST suite.
+        </div>
+        <div class="block">
+            <h3 style="padding: -100px;">Annotation pipeline example</h3>
+            <div><h4>An example that shows how to create an annotation script</h4></div>
+
+            <p>This is an example of a pipeline script that exec HPC-T-Annotator with BLASTP or BLASTX against protein database.</p>
+            <div class="code-cell">
+                # Download the main repository as a ZIP file from GitHub<br>
+                wget https://github.com/lorenzo-arcioni/HPC-T-Annotator/archive/refs/heads/main.zip<br><br>
+                
+                # Set a variable "nr" to store a directory name<br>
+                nr="hpc-t-annotator_NR"<br><br>
+                
+                # Unzip the downloaded ZIP file into the "nr" directory<br>
+                unzip HPC-T-Annotator-main.zip -d $nr<br><br>
+                
+                # Remove the downloaded ZIP file to save space<br>
+                rm HPC-T-Annotator-main.zip<br><br>
+                
+                # Change the current working directory to the "HPC-T-Annotator-main" directory<br>
+                cd $nr/HPC-T-Annotator-main<br><br>
+                
+                # Execute the "main.sh" script with various parameters:<br>
+                # -i: Input file path<br>
+                # -b: Path to executable<br>
+                # -T: A tool identifier<br>
+                # -t: Number of threads<br>
+                # -D: Enable Diamond<br>
+                # -d: Path to the database<br>
+                # -p: Number of processes<br>
+                ./main.sh -i /home/user/assembly/slow_fast_degs_hs.fasta -b /home/user/BANCHE_OMOLOGY/diamond -T blastx -t 48 -D -d /home/user/BANCHE_OMOLOGY/NR/nr.dmnd -p 50
+                
+            </div>
+        </div>        
+    </div>
+</body>
+</html>
