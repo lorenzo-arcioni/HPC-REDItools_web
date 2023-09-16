@@ -30,56 +30,61 @@
     </div>
 
     <div class="description">
-        <p>The logic behind the application can be summarized simply as follows: the user, who intends to perform the alignment process, 
-           provides HPC-T-Annotator with the input Multi-FASTA file. This file, which would typically be the analyzed file used 
-           with traditional alignment software, contains the sequences of interest. In order to expedite 
-           the alignment process, HPC-T-Annotator employs a distributed approach where the sequences within the input file are distributed
-           and annotated separately and independently.</p>
+        <p>The logic behind the application can be summarized simply as follows: the user, who intends to perform the RNA-editing detection, 
+           provides HPC-REDItool with the input BAM files. These files, which would typically be the sequentially analyzed files used 
+           with REDItools-v3 software, contains the data of interest. In order to expedite 
+           the parallel detection process, HPC-REDItools employs a distributed approach where the BAM files within the input directory are distributed
+           and analyzed separately and independently.</p>
         <img src="../static/function_details.png" alt="Pipeline" width="1200">
         <p>This parallelization strategy enables us to achieve significant reductions in 
-           alignment time. By leveraging the power of distributed computing, HPC-T-Annotator harnesses the computational resources of an 
-           HPC cluster, allowing multiple alignment instances to be executed simultaneously. Each alignment instance compares a subset of 
-           sequences from the input file to a sequence database, inferring their functions based on homology. The results of these separate alignments 
-           are then consolidated to generate the final alignment output.</p>
+           detention time. By leveraging the power of distributed computing, HPC-REDItools harnesses the computational resources of an 
+           HPC cluster, allowing multiple analysis instances to be executed simultaneously.</p>
         <p>This approach enables researchers to obtain comprehensive 
-           and accurate annotation results within significantly shorter timeframes, enhancing their ability to analyze and understand the 
-           functional roles of the expressed genes in the specific organism of interest.
+           and accurate RNA-editing detection results within significantly shorter timeframes, enhancing their ability to analyze and understand the 
+           information encoded in the BAM files.
         </p>
     </div>
 
 
     <!-- Workflow -->
     <div class="block">
-        <h3 style="text-align: center;">Complete workflow diagram of parallel processing of HPC-T-Annotator</h3>
+        <h3 style="text-align: center;">Complete workflow diagram of parallel processing of HPC-REDItools</h3>
         <div class="figure">
-            <img src="../static/logic-diagram2.png" 
-                 alt="Workflow diagram of parallel processing of HPC-T-Annotator" 
+            <img src="../static/hpc-reditools_logic-diagram2.png" 
+                 alt="Workflow diagram of parallel processing of HPC-REDItools" 
                  width="1100"
                  style="margin: auto auto">
         </div>
-        <p>Figure: Workflow diagram of parallel processing of HPC-T-Annotator.</p>
+        <p>Figure: Workflow diagram of parallel processing of HPC-REDItools.</p>
     </div>
 
-    <!-- Splitting the Input File -->
+    <!-- Collect the input files -->
     <div class="block">
-        <h2>Phase 1: Splitting the Input File</h2>
-        <p>As a first step, the input file provided by the user (containing the sequences on which to perform the homology annotation process in Multi-FASTA format) is split into multiple partial files (on which alignment will be performed in parallel mode), each containing a portion of the sequences that were initially in the original file. Each process will then be assigned a certain number of sequences on which to perform the alignment.</p>
-        <p>The scattering algorithm used in the application is the Cyclic-Distribution, which consists of the cyclic assignment of sequences within the input file. This ensures a proper load balancing, distributing the workload effectively.</p>
+        <h2>Phase 1: Collecting the Input Files</h2>
+        <p>As an initial step, the master process collect and count the input files provided by the user, which contain all the necessary information for RNA-editing detection. 
+            Each process will then be assigned a BAM file on which to perform the analysis in the second phase.</p>
     </div>
 
     <!-- Performing the Alignment -->
     <div class="block">
-        <h2>Phase 2: Performing the Alignment</h2>
-        <p>After the splitting phase, where the initial files are divided into smaller parts, the subsequent step involves aligning the different sequences contained within these partial files. This alignment process is crucial for identifying similarities and relationships between the sequences, providing valuable insights into their functions and evolutionary origins.</p>
-        <p>To accomplish this alignment, each process initiates an instance of the selected alignment software, such as BLAST or Diamond. These software tools employ sophisticated algorithms and databases to compare and match the sequences against each other. By utilizing parallel processing, multiple instances of the alignment software are launched simultaneously, allowing for faster and more efficient analysis.</p>
-        <p>As the alignment software runs, it generates partial results for each process or instance involved in the alignment. These partial results represent the individual findings and matches discovered by each instance of the software. Combining these partial results from all the processes leads to a comprehensive overview of the sequence alignments, highlighting the shared characteristics and differences among them.</p>
+        <h2>Phase 2: Performing the Analysis</h2>
+        <p>After the Collecting phase, the subsequent step involves analyze the different BAMs contained within input directory. 
+            This analysis process is crucial for identifying RNA-editing events providing the user with a comprehensive overview of the data.</p>
+        <p>To accomplish this analysis, each process initiates an instance of the 
+            REDItools software. These software tools employ sophisticated algorithms to detect and find the RNA-editing events.
+            By utilizing parallel processing, multiple instances of the software are launched simultaneously, allowing for faster and more efficient analysis on a large ammount of BAMs.</p>
+        <p>As the REDItools software runs, it generates detection results for each 
+            process or instance involved in the analysis. These results, one for each BAM file,
+            represent the individual findings and matches discovered by each instance of the software. 
+        </p>
     </div>
 
     <!-- Merging the Results -->
     <div class="block">
         <h2>Phase 3: Merging the Results</h2>
-        <p>Finally, after the completion of all computations, the master process gathers the outputs from the sub-files and proceeds with a merging operation. This crucial merging step combines all the alignment results obtained from the individual files, consolidating them into a single file in a tab-separated value (tsv) format. By bringing together the alignments from different parts of the data, this unified file not only provides a comprehensive overview of the analysis but also facilitates researchers in efficiently accessing and interpreting the complete set of alignment results. Moreover, this streamlined approach ensures the seamless integration of information, ultimately simplifying further downstream analysis and enhancing overall productivity.</p>
-    </div>
+        <p>Finally, after the completion of all computations, the master process update the log file with all information related to the analysis.
+           After this phase, the results files will be available for the user in tmp directory in tsv format.</p>
+        </p>
 </div>
 
 </body>

@@ -85,7 +85,6 @@ def start():
                                                                     data_dic["reference"],
                                                                     data_dic["bed_file"],
                                                                     data_dic["splicing_file"],
-                                                                    data_dic["omopolymeric_file_w"],
                                                                     data_dic["omopolymeric_file_r"],
                                                                     data_dic["additional_options"],
                                                                     data_dic["threads"],
@@ -168,7 +167,6 @@ def start():
         data_dic['reference']   = request.form.get('REF_path')
         data_dic['bed_file']    = request.form.get('BED_path')
         data_dic['splicing_file']     = request.form.get('SP_path')
-        data_dic['omopolymeric_file_w']    = request.form.get('OM_path')
         data_dic['omopolymeric_file_r']     = request.form.get('OMO_path')
         data_dic['additional_options'] = request.form.get('add_options')
         

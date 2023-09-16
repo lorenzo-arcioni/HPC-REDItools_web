@@ -17,7 +17,7 @@ do
 done
 
 #Calculate time
-#python3 time_calculator.py >> ./general.log  
+python3 time_calculator.py >> ./general.log  
 
 #Update log files
 date1=$(grep "Starting timestamp#" -i ./general.log | tail -1 | cut -d"#" -f 2)

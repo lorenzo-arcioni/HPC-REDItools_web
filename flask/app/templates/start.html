@@ -115,14 +115,20 @@
                         </button>
                     </div>
                     <div class="SAT">
-                        <label for="Part">Input directory absolute path *</label><br>
+                        <label for="Part">Input directory absolute path</label><br>
                         <input class="long_input" type="text" name="ID_path" id="IF_path" size="110">
                         <br>
                         <br>
-                        <label for="Part">Absolute path to the reference genome *</label><br>
+                        <label for="Part">Absolute path to the reference genome</label><br>
                         <input class="long_input" type="text" name="REF_path" id="REF_path" size="110">
                         <br>
                         <br>
+                        <input class="show_advanced_options" type="checkbox" name="show_advanced_options" id="show_advanced_options" onchange="toggleAdvancedoptions()" onload="toggleAdvancedoptions()">
+                        <label for="Part">Show advanced options</label><br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="SAT" id="advanced_options" style="display: none;">
                         <label for="Part">Absolute path of BED file containing target regions</label><br>
                         <input class="long_input" type="text" name="BED_path" id="BED_path" size="110">
                         <br>
@@ -135,17 +141,12 @@
                         <input class="long_input" type="text" name="OMO_path" id="OMO_path" size="110">
                         <br>
                         <br>
-                        <label for="Part">Absolute path to write omopolymeric positions to</label><br>
-                        <input class="long_input" type="text" name="OM_path" id="OM_path" size="110">
-                        <br>
-                        <br>
                         <label for="Part">Additional options</label> 
                         <button id="help_add_options" type="button" style="height: 18px;"> 
                             <p style="margin-top: -1.5px;">?</p>
                         </button>
                         <br>
                         <input class="long_input" type="text" name="add_options" id="add_options" value="" size="110">
-
                     </div>
                 </div>
                 <div class="icon" style="text-align: right;">

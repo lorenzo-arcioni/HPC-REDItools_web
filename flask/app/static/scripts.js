@@ -53,6 +53,17 @@ function toggleConfigurationPanel() {
         noneConfPanel.style.display = "block";
     }
 }
+function toggleAdvancedoptions() {
+    var advanced_options = document.getElementById("advanced_options");
+    var check_advanced = document.getElementById("show_advanced_options");
+
+    if (check_advanced && check_advanced.checked) {
+        advanced_options.style.display = "block";
+    } else {
+        advanced_options.style.display = "none";
+    }
+}
+
 // Check if all fields are filled
 function validateForm(){
     var form = document.querySelector("form");

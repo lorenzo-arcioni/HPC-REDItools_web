@@ -60,7 +60,6 @@
                 <li><strong>Account name</strong>: Specify the name of the account for job submission.</li>
                 <li><strong>Serial partition</strong>: Enter the name of the serial partition for single-threaded jobs.</li>
                 <li><strong>Parallel partition</strong>: Provide the name of the parallel partition for multi-threaded jobs.</li>
-                <li><strong>Number of processes</strong>: Set the desired number of processes.</li>
                 <li><strong>Number of threads</strong>: Define the number of threads per process.</li>
                 <li><strong>Wall-time(hours)</strong>: Specify the maximum duration of the job in hours.</li>
                 <li><strong>Memory per process:</strong> Enter the memory requirement per process.</li>
@@ -79,41 +78,55 @@
 
     </div>
     <div class="block">
-        <h3>Step 2: Alignment Software Settings</h3>
+        <h3>Step 2: REDItools Software Settings</h3>
         <div>
-            <p>Select an annotation tool and configure settings:</p>
-
-            <ul>
-                <li>
-                    <label for="blast"><strong>Blast</strong></label>
-                </li>
-                <li>
-                    <label for="diamond"><strong>Diamond</strong></label>
-                </li>
-            </ul>
+            <p>Configure the mandatory settings:</p>
         </div>
-
-        <p>Configure the settings for the selected annotation software:</p>
         <ul>
-            <li><strong>Select an annotation tool</strong>: Choose either Blast or Diamond as the annotation tool.</li>
-            <li><strong>Choose a tool</strong>: Select the specific tool to use (e.g., Blastp or Blastx).</li>
-            <li><strong>Database absolute path</strong>: Provide the absolute path to the annotation database.</li>
-            <li><strong>Input file absolute path</strong>: Specify the absolute path to the input file for annotation.</li>
-            <li><strong>Binary absolute path</strong>: Enter the absolute path to the annotation software binary.</li>
-            <li><strong>Outformat</strong>: Define the output format for annotation results using double quotes (e.g., "6 qseqid sseqid...").</li>
-            <li><strong>Additional options</strong> Enter any additional options that you would like to access and input any extra parameters required.</li>
+            <li><strong>Input directory absolute path</strong>: Insert the absolute path of the directory containing the input BAM files.</li>
+            <li><strong>Absolute path to the genome reference</strong>: Insert the absolute path of the genome reference used to generate the BAM files.</li>
         </ul>
 
-        <p>In note, for <strong>Additional options</strong> field, only options related to computation are accepted; options indicating the usage of threads and input/output 
-            file names are not accepted. 
-            So the options -p and -o for diamond or -out and -num_threads for blast are not accepted!
-            Use this field to provide any additional command-line options or parameters for the annotation tool. These options should be entered as you would on the command line, separated by spaces.
-            For example, you can specify parameters like "-evalue 1e-5 -max_target_seqs 10" for a BLAST execution.</p>
+        <div>
+            <p>Configure the optional settings:</p>
+        </div>
+        <ul>
+            <li><strong>Absolute path of BED file containing target regions</strong>: Insert the absolute path of the BED file containing target regions</li>
+            <li><strong>Absolute path to the file containing the splicing sites positions</strong>: Insert the absolute path of the file containing the splicing sites positions</li>
+            <li><strong>Absolute path to the file containing the omopolymeric positions</strong>: Insert the absolute path of the file containing the omopolymeric positions</li>
+            <li><strong>Additional options</strong>: Provide any additional command-line options or parameters for REDItools-v3 software.</li>
+        </ul>
+
+        <p>In note, for <strong>Additional options</strong> field, only the following options are accepted:</p>
+        <ul>
+            <li><strong>-s, --strand (choices: 0, 1, 2)</strong>: Specifies the strand orientation. It can be 0 (unstranded), 1 (second strand oriented), or 2 (first strand oriented).</li>
+            <li><strong>-a, --append-file (action='store_true')</strong>: Enables the option to append results to an existing file (and creates it if it does not exist).</li>
+            <li><strong>-g, --region</strong>: Enter the region of the BAM file to be analyzed.</li>
+            <li><strong>-c, --create-omopolymeric-file (default=False, action='store_true')</strong>: Enables the option to create a file of omopolymeric positions.</li>
+            <li><strong>-os, --omopolymeric-span (type=int, default=5)</strong>: Specifies the omopolymeric span.</li>
+            <li><strong>-ss, --splicing-span (type=int, default=4)</strong>: Specifies the splicing span.</li>
+            <li><strong>-mrl, --min-read-length (type=int, default=30)</strong>: Reads with a length below this value will be discarded.</li>
+            <li><strong>-q, --min-read-quality (type=int, default=20)</strong>: Reads with mapping quality below this value will be discarded.</li>
+            <li><strong>-bq, --min-base-quality (type=int, default=30)</strong>: Bases with quality below this value will not be included in the analysis.</li>
+            <li><strong>-mbp, --min-base-position (type=int, default=0)</strong>: Bases residing in a previous position (in the read) will not be included in the analysis.</li>
+            <li><strong>-Mbp, --max-base-position (type=int, default=0)</strong>: Bases residing in a further position (in the read) will not be included in the analysis.</li>
+            <li><strong>-l, --min-column-length (type=int, default=1)</strong>: Positions whose columns have a length below this value will not be included in the analysis.</li>
+            <li><strong>-men, --min-edits-per-nucleotide (type=int, default=0)</strong>: Positions whose columns have bases with fewer edits than this threshold will not be included in the analysis.</li>
+            <li><strong>-me, --min-edits (type=int, default=0)</strong>: The minimum number of editing events (per position). Positions whose columns have bases with fewer edits than "min-edits-per-base edits" will not be included in the analysis.</li>
+            <li><strong>-Men, --max-editing-nucleotides (type=int, default=100)</strong>: The maximum number of editing nucleotides, from 0 to 4 (per position). Positions whose columns have more than "max-editing-nucleotides" will not be included in the analysis.</li>
+            <li><strong>-d, --debug (default=False, action='store_true')</strong>: Runs REDItools in DEBUG mode.</li>
+            <li><strong>-T, --strand-confidence-threshold (type=float, default=0.7)</strong>: Reports strand orientation only if at least this proportion of reads are of a given strand.</li>
+            <li><strong>-C, --strand-correction (default=False, action='store_true')</strong>: Enables strand correction. Once the strand has been inferred, only bases according to this strand will be selected.</li>
+            <li><strong>-V, --verbose (default=False, action='store_true')</strong>: Provides verbose information on stderr.</li>
+            <li><strong>-N, --dna (default=False, action='store_true')</strong>: Runs REDItools 2.0 on DNA-Seq data.</li>
+            <li><strong>-w, --window (type=int, default=0)</strong>: Specifies how many base pairs should be processed by each thread at a time. Defaults to processing the entire contig.</li>
+        </ul>
+
     </div>
     <div class="block">
         <h3>Generating the Software Package</h3>
         <div>
-            <p>After configuring the settings for both workload manager and annotation software, you can:</p>
+            <p>After configuring the settings for both workload manager and REDItools software, you can:</p>
 
             <ul>
                 <li>Click the <strong>Reset the Fields</strong> button to clear all entered data.</li>
@@ -135,8 +148,8 @@
             </p>
         </div>
         <div class="code-cell">
-            tar -xf hpc-t-annotator.tar -C /path/to/myfolder/hpc-t-annotator<br>
-            cd /path/to/myfolder/hpc-t-annotator
+            tar -xf hpc-reditools.tar -C /path/to/myfolder/hpc-reditools<br>
+            cd /path/to/myfolder/hpc-reditools
         </div>
         <p>And the, if you are on HPC cluster with Slurm workload manager</p>
         <div class="code-cell">
@@ -148,7 +161,7 @@
         </div>
     </div>
     <div class="description">  
-        <p style="text-align: center;">Once the entire computation process has ended (check the general.log file for the status), the final result will be in tmp/final_blast.tsv file.</p>
+        <p style="text-align: center;">Once the entire computation process has ended (check the general.log file for the status), the final results will be in tmp/*.tsv files.</p>
     </div>
     <div class="block">
         <h3>Some useful monitoring commands</h3>

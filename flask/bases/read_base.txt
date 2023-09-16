@@ -21,7 +21,6 @@ def main():
 	reference  = "{}"
 	bed_file   = "{}"
 	splicing_file = "{}"
-	omopolymeric_file_w = "{}"
 	omopolymeric_file_r = "{}"
 	additional_options = "{}"
 	threads    = "{}"
@@ -62,8 +61,6 @@ def main():
 				script.write(" --bed_file \"" + str(bed_file) + "\"")
 			if splicing_file != "":
 				script.write(" --splicing-file \"" + str(splicing_file) + "\"")
-			if omopolymeric_file_w != "":
-				script.write(" --create-omopolymeric-file \"" + str(omopolymeric_file_w) + "\"")
 			if omopolymeric_file_r != "":
 				script.write(" --load-omopolymeric-file \"" + str(omopolymeric_file_r) + "\"")
 			if additional_options != "":
