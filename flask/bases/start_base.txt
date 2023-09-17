@@ -22,7 +22,7 @@ grep ">" -i "$reference" > headers.txt
 #Updating log file
 echo "Starting timestamp#""$(date +'%Y-%m-%d %H:%M:%S')" >> ./general.log
 echo Input files path: $inputpath >> ./general.log
-echo Processes: $(ls $inputpath | wc -l) >> ./general.log
+echo Processes: $(ls $inputpath/*.bam | wc -l) >> ./general.log
 echo Reference: $reference >> ./general.log
 echo Chromosomes: $(grep ">" -i $reference -c) >> ./general.log
 #Run the processes

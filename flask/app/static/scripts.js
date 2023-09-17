@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function initPage() {
     toggleConfigurationPanel();
+    var advanced_options = document.getElementById("advanced_options");
+    advanced_options.style.display = "none";
 
     // Verifica se l'elemento con l'id "sub_B" esiste prima di aggiungere l'event listener
     var sub_B_v = document.getElementById("sub_B");
@@ -17,19 +19,9 @@ function initPage() {
         help_add_options_v.addEventListener("click", help_add_options);
     }
 
-    var help_outfmt_v = document.getElementById("help_outfmt");
-    if (help_outfmt_v) {
-        help_outfmt_v.addEventListener("click", help_outfmt);
-    }
-
-    var help_db_path_v = document.getElementById("help_db_path");
-    if (help_db_path_v) {
-        help_db_path_v.addEventListener("click", help_db_path);
-    }
-
-    var help_alignment_v = document.getElementById("help_alignment");
-    if (help_alignment_v) {
-        help_alignment_v.addEventListener("click", help_alignment);
+    var help_redi_v = document.getElementById("help_redi");
+    if (help_redi_v) {
+        help_redi_v.addEventListener("click", help_redi);
     }
 
     var help_workload_v = document.getElementById("help_workload");
@@ -72,7 +64,7 @@ function validateForm(){
 
     for (var i = 0; i < inputs.length; i++) {
         var input = inputs[i];
-        var forbiddenIds = ["add_options", "OM_path", "OMO_path", "BED_path", "SP_path"];
+        var forbiddenIds = ["add_options", "OMO_path", "BED_path", "SP_path"];
 
         if (input.offsetParent !== null && input.value.trim() === "" && !forbiddenIds.includes(input.id)){
             isValid = false;
@@ -88,48 +80,16 @@ function validateForm(){
         window.alert("Please fill all field!");
         exit(0)
     }
-    // Check if the outformat has the correct format with double quotes
-    var outformatInput = document.getElementById("outformat");
-
-    if (!outformatInput.value.match('\".*6.*\"')){
-        isValid = false;
-        outformatInput.style.backgroundColor = "#BDBDBD";
-    } else {
-        outformatInput.style.backgroundColor = "";
-    }
-
-    if (!isValid){
-        event.preventDefault();
-        window.alert("There is an error in the outformat.\nRemember the double quotes and the correct spaces.");
-        exit(0);
-    }
-
-    // Check if the outformat has the correct format with double quotes
-    var add_options = document.getElementById("add_options");
-
-    if (add_options.value.match('.*-num_threads.*') || add_options.value.match('.*-p.*') || add_options.value.match('.*-o.*') || add_options.value.match('.*-out.*')){
-        isValid = false;
-        add_options.style.backgroundColor = "#BDBDBD";
-    } else {
-        add_options.style.backgroundColor = "";
-    }
-
-    if (!isValid){
-        event.preventDefault();
-        window.alert("There is an error in the additional options.\nRemember that -p, -o, -num_threads and -out options are not allowed.");
-        exit(0);
-    }
 }
 
 function help_add_options(){
-    window.alert("In note, only options related to computation are accepted; options indicating the usage of threads and input/output file names are not accepted. So the options -t and -o for diamond or -out and -num_threads for blast are not accepted! \
-                \n\n For example, you can specify parameters like \n\n  -evalue 1e-5 -max_target_seqs 10 \n\nfor a BLAST execution or \n\n  --ultra-sensitive -k 10 \n\nfor Diamond execution.");
+    window.alert("In note, only options related to computation are accepted. Please see the \"Help\" page for more information.");
 }
 
 function help_workload(){
     window.alert("In this section, you can configure the workload manager you wish to use, or you can choose not to use any workload manager.");
 }
 
-function help_alignment(){
+function help_redi(){
     window.alert("In this section, you can set the configuration of REDItools software. It is necessary to provide the input directory (absolute) path, the reference genome (absolute) path.");
 }
