@@ -202,12 +202,13 @@ def start():
             data_dic['wlm'] = 'None'
             data_dic['threads'] = request.form.get('threads')
         
-        data_dic['inputpath']   = request.form.get('ID_path')
-        data_dic['reference']   = request.form.get('REF_path')
-        data_dic['bed_file']    = request.form.get('BED_path')
-        data_dic['splicing_file']     = request.form.get('SP_path')
-        data_dic['omopolymeric_file_r']     = request.form.get('OMO_path')
-        data_dic['additional_options'] = request.form.get('add_options')
+        data_dic['inputpath']           = request.form.get('ID_path')
+        data_dic['python_executable']   = request.form.get('EX_path')
+        data_dic['reference']           = request.form.get('REF_path')
+        data_dic['bed_file']            = request.form.get('BED_path')
+        data_dic['splicing_file']       = request.form.get('SP_path')
+        data_dic['omopolymeric_file_r'] = request.form.get('OMO_path')
+        data_dic['additional_options']  = request.form.get('add_options')
         
         
         fill_startbase(data_dic)
