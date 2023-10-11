@@ -50,6 +50,10 @@
 
                         <input type="radio" id="slurm" value="slurm" name="workload_manager" onchange="toggleConfigurationPanel()" onload="toggleConfigurationPanel()">
                         <label for="slurm">Slurm</label>
+
+                        <input type="radio" id="htcondor" value="htcondor" name="workload_manager" onchange="toggleConfigurationPanel()" onload="toggleConfigurationPanel()">
+                        <label for="htcondor">HTCondor</label>
+
                         <input type="radio" id="none" value="none" name="workload_manager" checked onchange="toggleConfigurationPanel()" onload="toggleConfigurationPanel()">
                         <label for="none">None</label>
                     </div>
@@ -84,6 +88,39 @@
                         <br>
                         <label for="Mproces"><b>Memory per process (GB):</b></label>
                         <input type="number" name="Slurm_Mprocess" id="Mprocess" style="width: 40px;" min=1 value=1>
+                        Enter the memory requirement per process.
+                    </div>
+
+                    <div class="conf" id="htcondorConfPanel" style="display: none;">
+                        <h4>HTCondor configuration settings</h4>
+
+                        <label for="HTC_universe_name"><b>Universe:</b> </label>
+                        <input type="text" name="HTC_universe_name" id="HTC_universe_name">
+                        Specify the universe for job submission.
+                        <br>
+                        <br>
+                        <label for="HTC_scheduler_name"><b>Scheduler name: </b></label>
+                        <input type="text" name="HTC_scheduler_name" id="HTC_scheduler_name">
+                        The name of the HTCondor scheduler.
+                        <br>
+                        <br>
+                        <label for="HTC_accounting_group"><b>Accounting group</b> </label>
+                        <input type="text" name="HTC_accounting_group" id="HTC_accounting_group">
+                        Provide the name of the HTCondor accounting group.
+                        <br>
+                        <br>
+                        <label for="Nthread"><b>Number of threads: </b></label>
+                        <input type="number" name="HTC_Nthreads" id="HTC_Nthreads" style="width: 40px;" min=1 value=1>
+                        Define the number of threads per process.
+                        <br>
+                        <br>
+                        <label for="Time"><b>Wall-time (hours):</b></label>
+                        <input type="number" name="HTC_time" id="Time" style="width: 40px;" min=1 value=1>
+                        <U>Must be less then your parallel partition wall-time.</U>
+                        <br>
+                        <br>
+                        <label for="Mproces"><b>Memory per process (GB):</b></label>
+                        <input type="number" name="HTC_Mprocess" id="HTC_Mprocess" style="width: 40px;" min=1 value=1>
                         Enter the memory requirement per process.
                     </div>
 

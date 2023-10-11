@@ -54,9 +54,25 @@ def start():
                 start.write("#SBATCH --partition=" + data_dic['serial_part'] + '\n\n')
             
             start.write(open("../bases/start_base.txt").read().format(data_dic['inputpath'],
-                                                                      data_dic['threads'], 
+                                                                      data_dic['threads'],
+                                                                      data_dic['python_executable'],
                                                                       data_dic['reference']))
             start.close()
+        
+        if data_dic['wlm'] == 'htcondor':
+
+            with open("start.sub") as sub:
+                header =  "universe=" + data_dic['HTC_universe_name'] + '\n' \
+                        + "output=start.out" + '\n' \
+                        + "error=start.err" + '\n' \
+                        + "log=start.log" + '\n' \
+                        + "executable=/bin/bash" + '\n' \
+                        + "arguments=start.sh" + '\n' \
+                        + "request_cpus=1" +'\n' \
+                        + "request_memory=1GB" + '\n' \
+                        + "queue" + "\n"
+                sub.write(header)
+                sub.close()
 
     def fill_readbase(data_dic):
 
@@ -74,7 +90,16 @@ def start():
                         + "#SBATCH --error=general.err" + '\n'
             
         elif data_dic['wlm'] == 'htcondor':
-            pass
+
+            wlm_header =  "universe=" + data_dic['HTC_universe_name'] + '\n' \
+                        + "output=general.out" + '\n' \
+                        + "error=general.err" + '\n' \
+                        + "log=general.log" + '\n' \
+                        + "executable=/bin/bash" + '\n' \
+                        + "arguments=script.sh" + '\n' \
+                        + "request_cpus=" + data_dic['threads'] + '\n' \
+                        + "request_memory=" + data_dic['memory_per_process'] + "GB" + '\n' \
+                        + "queue" + "\n"
 
         elif data_dic['wlm'] == 'None':
             pass
@@ -83,6 +108,7 @@ def start():
 
             read.write(open("../bases/read_base.txt").read().format(data_dic["inputpath"],
                                                                     data_dic["reference"],
+                                                                    data_dic["python_executable"],
                                                                     data_dic["bed_file"],
                                                                     data_dic["splicing_file"],
                                                                     data_dic["omopolymeric_file_r"],
@@ -115,19 +141,25 @@ def start():
                 # Open the controlscript_base.txt file in read mode
                 with open("../bases/controlscript_base.txt", "r") as f:
                     # Read the contents of controlscript_base.txt and format it with "sbatch"
-                    base = f.read().format("sbatch")
+                    base = f.read().format("sbatch", "control_script.sh")
                     # Write the formatted contents to control_script.sh
                     control.write(base)
                     f.close()
             
             elif data_dic['wlm'] == 'htcondor':
-                pass
+                # Open the controlscript_base.txt file in read mode
+                with open("../bases/controlscript_base.txt", "r") as f:
+                    # Read the contents of controlscript_base.txt and format it with "bash"
+                    base = f.read().format("condor_submit", "control_script.sub")
+                    # Write the formatted contents to control_script.sh
+                    control.write(base)
+                    f.close()
 
             else:
                 # Open the controlscript_base.txt file in read mode
                 with open("../bases/controlscript_base.txt", "r") as f:
                     # Read the contents of controlscript_base.txt and format it with "bash"
-                    base = f.read().format("bash")
+                    base = f.read().format("bash", "control_script.sh")
                     # Write the formatted contents to control_script.sh
                     control.write(base)
                     f.close()
@@ -148,6 +180,7 @@ def start():
         
         
         data_dic['wlm'] = request.form.get('workload_manager').lower()
+        data_dic['python_executable'] = "None"
         
         if data_dic['wlm'] == 'slurm':
             data_dic['account_name'] = request.form.get('Slurm_account_name')
@@ -158,7 +191,13 @@ def start():
             data_dic['memory_per_process'] = request.form.get('Slurm_Mprocess')
 
         elif data_dic['wlm'] == 'htcondor':
-            pass
+            data_dic['HTC_universe_name'] = request.form.get('HTC_universe_name')
+            data_dic['HTC_scheduler_name'] = request.form.get('HTC_scheduler_name')
+            data_dic['HTC_accounting_group'] = request.form.get('HTC_accounting_group')
+            data_dic['python_executable'] = request.form.get('HTC_python_executable')
+            data_dic['threads'] = request.form.get('HTC_Nthreads')
+            data_dic['time'] = request.form.get('HTC_time')
+            data_dic['memory_per_process'] = request.form.get('HTC_Mprocess')
         else:
             data_dic['wlm'] = 'None'
             data_dic['threads'] = request.form.get('threads')

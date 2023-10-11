@@ -17,14 +17,17 @@ def main():
 		None
 	"""
 
-	inputdir   = "{}"
-	reference  = "{}"
-	bed_file   = "{}"
-	splicing_file = "{}"
+	inputdir            = "{}"
+	reference           = "{}"
+	executable          = "{}"
+	bed_file            = "{}"
+	splicing_file       = "{}"
 	omopolymeric_file_r = "{}"
-	additional_options = "{}"
-	threads    = "{}"
-	wlm        = "{}"
+	additional_options  = "{}"
+	threads             = "{}"
+	wlm                 = "{}"
+
+	header = "{}"
 
 	pwd           = os.getcwd() # Get current path
 	pwd = tmpdir  = os.path.join(pwd, "tmp") # Add to path the directory name
@@ -47,16 +50,21 @@ def main():
 		with open("script.sh", 'w', encoding='utf-8') as script:
 			script.write("#!/bin/bash" + '\n')
 
-			script.write("{}") # Workload manager header
-
 			if wlm == "slurm":
+				script.write(header) # Workload manager header
 				script.write("#SBATCH --cpus-per-task=" + str(threads) + '\n')
 				script.write("#SBATCH --job-name=PA_proc-" + str(idx) + '\n')
-
-
-			script.write("/usr/bin/time -f \"%e\" python -m reditools \"" + str(inputdir + "/" + bam_file) + \
-														"\" -r " + str(reference) + " -o ../\"" + bam_file + "\".reditools.tsv -t " + \
-														str(threads))
+				script.write("/usr/bin/time -f \"%e\" python -m reditools \"" + str(inputdir + "/" + bam_file) + \
+										"\" -r " + str(reference) + " -o ../\"" + bam_file + "\".reditools.tsv -t " + \
+										str(threads))
+			elif wlm == "htcondor":
+				script.write("/usr/bin/time -f \"%e\" " + str(executable) + " -m reditools \"" + str(inputdir + "/" + bam_file) + \
+										"\" -r " + str(reference) + " -o ../\"" + bam_file + "\".reditools.tsv -t " + \
+										str(threads))
+			else:
+				script.write("/usr/bin/time -f \"%e\" python -m reditools \"" + str(inputdir + "/" + bam_file) + \
+										"\" -r " + str(reference) + " -o ../\"" + bam_file + "\".reditools.tsv -t " + \
+										str(threads))
 			if bed_file != "":
 				script.write(" --bed_file \"" + str(bed_file) + "\"")
 			if splicing_file != "":
@@ -69,6 +77,13 @@ def main():
 			script.write('\n')
 			script.write("touch finish_flag")
 			script.close()
+		
+		#Creation of the submission file
+		if wlm == "htcondor":
+			with open("submission.sub", 'w', encoding='utf-8') as sub:
+				sub.write(header)
+				sub.close()
+
 
 		sp.call("chmod 777 ./script.sh", shell=True)	 #Make executable the script
 
@@ -76,7 +91,7 @@ def main():
 		if wlm == "slurm":
 			sp.call("sbatch ./script.sh", shell=True)
 		elif wlm == "htcondor":
-			pass
+			sp.call("condor_submit ./submission.sub", shell=True)
 		else:
 			sp.call("bash ./script.sh 2> general.err &", shell=True)
 
@@ -87,7 +102,7 @@ def main():
 	if wlm == "slurm":
 		sp.call("sbatch ./control_script.sh", shell=True)
 	elif wlm == "htcondor":
-		pass
+		sp.call("condor_submit control_script.sub", shell=True)
 	else:
 		sp.call("bash ./control_script.sh", shell=True)
 

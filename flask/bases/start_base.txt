@@ -7,7 +7,7 @@ reference="{}"
 #Get all the headers and put them in headers file
 #########################
 
-python3 -m reditools -h 1>/dev/null
+# python3 -m reditools -h 1>/dev/null
 
 
 if [ $? -gt 0 ]

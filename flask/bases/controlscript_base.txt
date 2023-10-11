@@ -10,7 +10,7 @@ do
 	if [ $(( end_time - start_time )) -gt 1800 ]
 		then
 			#Launch my clone
-			{} ./control_script.sh
+			{} {}
 			exit 0
 	fi
 	sleep 5

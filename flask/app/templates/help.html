@@ -44,6 +44,10 @@
                     <label for="slurm"><strong>Slurm</strong></label>
                 </li>
                 <li>
+                    <input type="radio" id="htcondor" value="htcondor" name="workload_manager" checked onchange="toggleConfigurationPanel()" onload="toggleConfigurationPanel()">
+                    <label for="HTC"><strong>HTCondor</strong></label>
+                </li>
+                <li>
                     <input type="radio" id="none" value="none" name="workload_manager" checked onchange="toggleConfigurationPanel()" onload="toggleConfigurationPanel()">
                     <label for="none"><strong>None</strong></label>
                 </li>
@@ -60,6 +64,20 @@
                 <li><strong>Account name</strong>: Specify the name of the account for job submission.</li>
                 <li><strong>Serial partition</strong>: Enter the name of the serial partition for single-threaded jobs.</li>
                 <li><strong>Parallel partition</strong>: Provide the name of the parallel partition for multi-threaded jobs.</li>
+                <li><strong>Number of threads</strong>: Define the number of threads per process.</li>
+                <li><strong>Wall-time(hours)</strong>: Specify the maximum duration of the job in hours.</li>
+                <li><strong>Memory per process:</strong> Enter the memory requirement per process.</li>
+            </ul>
+        </div>
+
+        <!-- Slurm configuration settings description here -->
+        <div class="conf" id="htcondorConfPanel" style="display: none;">
+            <h4>Slurm Configuration Settings</h4>
+            <p>Configure the settings for Slurm workload manager:</p>
+            <ul>
+                <li><strong>Universe name</strong>: Specify the name of the HTCondor universe for job submission.</li>
+                <li><strong>Schduler name</strong>: Enter the name of the HTCondor scheduler.</li>
+                <li><strong>Accounting group</strong>: Provide the name of the accounting group for this job submission.</li>
                 <li><strong>Number of threads</strong>: Define the number of threads per process.</li>
                 <li><strong>Wall-time(hours)</strong>: Specify the maximum duration of the job in hours.</li>
                 <li><strong>Memory per process:</strong> Enter the memory requirement per process.</li>

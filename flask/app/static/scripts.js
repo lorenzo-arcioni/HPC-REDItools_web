@@ -32,17 +32,25 @@ function initPage() {
 
 function toggleConfigurationPanel() {
     var slurmConfPanel = document.getElementById("slurmConfPanel");
+    var htcondorConfPanel = document.getElementById("htcondorConfPanel");
     var noneConfPanel = document.getElementById("noneConfPanel");
 
     var slurmRadio = document.getElementById("slurm");
+    var htcondorRadio = document.getElementById("htcondor");
     var noneRadio = document.getElementById("none");
 
     if (slurmRadio && slurmRadio.checked) {
         slurmConfPanel.style.display = "block";
         noneConfPanel.style.display = "none";
+        htcondorConfPanel.style.display = "none";
     } else if (noneRadio && noneRadio.checked) {
         slurmConfPanel.style.display = "none";
         noneConfPanel.style.display = "block";
+        htcondorConfPanel.style.display = "none";
+    } else if (htcondorRadio && htcondorRadio.checked) {
+        slurmConfPanel.style.display = "none";
+        noneConfPanel.style.display = "none";
+        htcondorConfPanel.style.display = "block";
     }
 }
 function toggleAdvancedoptions() {
