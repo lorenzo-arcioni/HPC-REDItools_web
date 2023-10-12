@@ -169,13 +169,13 @@
             tar -xf hpc-reditools.tar -C /path/to/myfolder/hpc-reditools<br>
             cd /path/to/myfolder/hpc-reditools
         </div>
-        <p>And the, if you are on HPC cluster with Slurm workload manager</p>
+        <p>And then, if you are on HPC cluster with Slurm workload manager</p>
         <div class="code-cell">
             sbatch start.sh
         </div>
-        <p>Else, if you are on workload manager less architecture</p>
+        <p>If you are on HTCondor workload manager or on workload manager less architecture</p>
         <div class="code-cell">
-            bash start.sh
+            nohup bash start.sh 1> start.out 2> start.err &
         </div>
     </div>
     <div class="description">  
