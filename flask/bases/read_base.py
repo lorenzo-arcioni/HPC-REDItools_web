@@ -91,9 +91,9 @@ def main():
 		if wlm == "slurm":
 			sp.call("sbatch ./script.sh", shell=True)
 		elif wlm == "htcondor":
-			sp.call("condor_submit ./submission.sub", shell=True)
+			pass#sp.call("condor_submit ./submission.sub", shell=True)
 		else:
-			sp.call("bash ./script.sh 2> general.err &", shell=True)
+			pass#sp.call("bash ./script.sh 2> general.err &", shell=True)
 
 		os.chdir("../")
 	os.chdir("../")
@@ -101,10 +101,8 @@ def main():
 	#Run the control script
 	if wlm == "slurm":
 		sp.call("sbatch ./control_script.sh", shell=True)
-	elif wlm == "htcondor":
-		sp.call("condor_submit control_script.sub", shell=True)
-	else:
-		sp.call("bash ./control_script.sh", shell=True)
+	elif wlm == "htcondor" or wlm == "None":
+		pass#sp.call("bash ./control_script.sh", shell=True)
 
 if __name__ == '__main__':
     sys.exit(main())

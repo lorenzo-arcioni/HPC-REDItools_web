@@ -58,21 +58,6 @@ def start():
                                                                       data_dic['python_executable'],
                                                                       data_dic['reference']))
             start.close()
-        
-        if data_dic['wlm'] == 'htcondor':
-
-            with open("start.sub") as sub:
-                header =  "universe=" + data_dic['HTC_universe_name'] + '\n' \
-                        + "output=start.out" + '\n' \
-                        + "error=start.err" + '\n' \
-                        + "log=start.log" + '\n' \
-                        + "executable=/bin/bash" + '\n' \
-                        + "arguments=start.sh" + '\n' \
-                        + "request_cpus=1" +'\n' \
-                        + "request_memory=1GB" + '\n' \
-                        + "queue" + "\n"
-                sub.write(header)
-                sub.close()
 
     def fill_readbase(data_dic):
 
@@ -146,16 +131,7 @@ def start():
                     control.write(base)
                     f.close()
             
-            elif data_dic['wlm'] == 'htcondor':
-                # Open the controlscript_base.txt file in read mode
-                with open("../bases/controlscript_base.txt", "r") as f:
-                    # Read the contents of controlscript_base.txt and format it with "bash"
-                    base = f.read().format("condor_submit", "control_script.sub")
-                    # Write the formatted contents to control_script.sh
-                    control.write(base)
-                    f.close()
-
-            else:
+            elif data_dic['wlm'] == 'htcondor' or data_dic['wlm'] == 'None':
                 # Open the controlscript_base.txt file in read mode
                 with open("../bases/controlscript_base.txt", "r") as f:
                     # Read the contents of controlscript_base.txt and format it with "bash"
@@ -194,7 +170,6 @@ def start():
             data_dic['HTC_universe_name'] = request.form.get('HTC_universe_name')
             data_dic['HTC_scheduler_name'] = request.form.get('HTC_scheduler_name')
             data_dic['HTC_accounting_group'] = request.form.get('HTC_accounting_group')
-            data_dic['python_executable'] = request.form.get('HTC_python_executable')
             data_dic['threads'] = request.form.get('HTC_Nthreads')
             data_dic['time'] = request.form.get('HTC_time')
             data_dic['memory_per_process'] = request.form.get('HTC_Mprocess')
