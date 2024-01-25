@@ -170,3 +170,1123 @@
 2023/10/12 13:45:20 [notice] 1#1: start worker process 25
 2023/10/12 13:45:20 [notice] 1#1: start worker process 26
 2023/10/12 13:45:20 [notice] 1#1: start worker process 27
+2023/10/12 14:57:25 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/10/12 14:57:25 [notice] 20#20: gracefully shutting down
+2023/10/12 14:57:25 [notice] 23#23: gracefully shutting down
+2023/10/12 14:57:25 [notice] 20#20: exiting
+2023/10/12 14:57:25 [notice] 23#23: exiting
+2023/10/12 14:57:25 [notice] 20#20: exit
+2023/10/12 14:57:25 [notice] 23#23: exit
+2023/10/12 14:57:25 [notice] 21#21: gracefully shutting down
+2023/10/12 14:57:25 [notice] 21#21: exiting
+2023/10/12 14:57:25 [notice] 22#22: gracefully shutting down
+2023/10/12 14:57:25 [notice] 22#22: exiting
+2023/10/12 14:57:25 [notice] 22#22: exit
+2023/10/12 14:57:25 [notice] 26#26: gracefully shutting down
+2023/10/12 14:57:25 [notice] 26#26: exiting
+2023/10/12 14:57:25 [notice] 26#26: exit
+2023/10/12 14:57:25 [notice] 25#25: gracefully shutting down
+2023/10/12 14:57:25 [notice] 25#25: exiting
+2023/10/12 14:57:25 [notice] 25#25: exit
+2023/10/12 14:57:25 [notice] 24#24: gracefully shutting down
+2023/10/12 14:57:25 [notice] 24#24: exiting
+2023/10/12 14:57:25 [notice] 24#24: exit
+2023/10/12 14:57:25 [notice] 27#27: gracefully shutting down
+2023/10/12 14:57:25 [notice] 27#27: exiting
+2023/10/12 14:57:25 [notice] 27#27: exit
+2023/10/12 14:57:25 [notice] 21#21: exit
+2023/10/12 14:57:25 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/10/12 14:57:25 [notice] 1#1: worker process 23 exited with code 0
+2023/10/12 14:57:25 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/12 14:57:25 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/10/12 14:57:25 [notice] 1#1: worker process 20 exited with code 0
+2023/10/12 14:57:25 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/12 14:57:25 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/10/12 14:57:25 [notice] 1#1: worker process 26 exited with code 0
+2023/10/12 14:57:25 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/12 14:57:25 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/10/12 14:57:25 [notice] 1#1: worker process 22 exited with code 0
+2023/10/12 14:57:25 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/12 14:57:25 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/10/12 14:57:25 [notice] 1#1: worker process 21 exited with code 0
+2023/10/12 14:57:25 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/12 14:57:25 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/10/12 14:57:25 [notice] 1#1: worker process 24 exited with code 0
+2023/10/12 14:57:25 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/12 14:57:25 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/10/12 14:57:25 [notice] 1#1: worker process 27 exited with code 0
+2023/10/12 14:57:25 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/12 14:57:25 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/10/12 14:57:25 [notice] 1#1: worker process 25 exited with code 0
+2023/10/12 14:57:25 [notice] 1#1: exit
+2023/10/12 16:10:53 [notice] 1#1: using the "epoll" event method
+2023/10/12 16:10:53 [notice] 1#1: nginx/1.25.2
+2023/10/12 16:10:53 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/10/12 16:10:53 [notice] 1#1: OS: Linux 6.2.0-34-generic
+2023/10/12 16:10:53 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/10/12 16:10:53 [notice] 1#1: start worker processes
+2023/10/12 16:10:53 [notice] 1#1: start worker process 20
+2023/10/12 16:10:53 [notice] 1#1: start worker process 21
+2023/10/12 16:10:53 [notice] 1#1: start worker process 22
+2023/10/12 16:10:53 [notice] 1#1: start worker process 23
+2023/10/12 16:10:53 [notice] 1#1: start worker process 24
+2023/10/12 16:10:53 [notice] 1#1: start worker process 25
+2023/10/12 16:10:53 [notice] 1#1: start worker process 26
+2023/10/12 16:10:53 [notice] 1#1: start worker process 27
+2023/10/12 17:19:23 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/10/12 17:19:23 [notice] 20#20: gracefully shutting down
+2023/10/12 17:19:23 [notice] 21#21: gracefully shutting down
+2023/10/12 17:19:23 [notice] 20#20: exiting
+2023/10/12 17:19:23 [notice] 21#21: exiting
+2023/10/12 17:19:23 [notice] 20#20: exit
+2023/10/12 17:19:23 [notice] 21#21: exit
+2023/10/12 17:19:23 [notice] 22#22: gracefully shutting down
+2023/10/12 17:19:23 [notice] 22#22: exiting
+2023/10/12 17:19:23 [notice] 22#22: exit
+2023/10/12 17:19:23 [notice] 23#23: gracefully shutting down
+2023/10/12 17:19:23 [notice] 23#23: exiting
+2023/10/12 17:19:23 [notice] 23#23: exit
+2023/10/12 17:19:23 [notice] 24#24: gracefully shutting down
+2023/10/12 17:19:23 [notice] 24#24: exiting
+2023/10/12 17:19:23 [notice] 24#24: exit
+2023/10/12 17:19:23 [notice] 25#25: gracefully shutting down
+2023/10/12 17:19:23 [notice] 25#25: exiting
+2023/10/12 17:19:23 [notice] 25#25: exit
+2023/10/12 17:19:23 [notice] 26#26: gracefully shutting down
+2023/10/12 17:19:23 [notice] 26#26: exiting
+2023/10/12 17:19:23 [notice] 26#26: exit
+2023/10/12 17:19:23 [notice] 27#27: gracefully shutting down
+2023/10/12 17:19:23 [notice] 27#27: exiting
+2023/10/12 17:19:23 [notice] 27#27: exit
+2023/10/12 17:19:23 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/10/12 17:19:23 [notice] 1#1: worker process 21 exited with code 0
+2023/10/12 17:19:23 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/12 17:19:23 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/10/12 17:19:23 [notice] 1#1: worker process 22 exited with code 0
+2023/10/12 17:19:23 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/12 17:19:23 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/10/12 17:19:23 [notice] 1#1: worker process 24 exited with code 0
+2023/10/12 17:19:23 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/12 17:19:23 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/10/12 17:19:23 [notice] 1#1: worker process 23 exited with code 0
+2023/10/12 17:19:23 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/12 17:19:23 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/10/12 17:19:23 [notice] 1#1: worker process 20 exited with code 0
+2023/10/12 17:19:23 [notice] 1#1: worker process 25 exited with code 0
+2023/10/12 17:19:23 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/12 17:19:23 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/10/12 17:19:23 [notice] 1#1: worker process 26 exited with code 0
+2023/10/12 17:19:23 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/12 17:19:23 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/10/12 17:19:23 [notice] 1#1: worker process 27 exited with code 0
+2023/10/12 17:19:23 [notice] 1#1: exit
+2023/10/12 19:04:03 [notice] 1#1: using the "epoll" event method
+2023/10/12 19:04:03 [notice] 1#1: nginx/1.25.2
+2023/10/12 19:04:03 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/10/12 19:04:03 [notice] 1#1: OS: Linux 6.2.0-34-generic
+2023/10/12 19:04:03 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/10/12 19:04:03 [notice] 1#1: start worker processes
+2023/10/12 19:04:03 [notice] 1#1: start worker process 20
+2023/10/12 19:04:03 [notice] 1#1: start worker process 21
+2023/10/12 19:04:03 [notice] 1#1: start worker process 22
+2023/10/12 19:04:03 [notice] 1#1: start worker process 23
+2023/10/12 19:04:03 [notice] 1#1: start worker process 24
+2023/10/12 19:04:03 [notice] 1#1: start worker process 25
+2023/10/12 19:04:03 [notice] 1#1: start worker process 26
+2023/10/12 19:04:03 [notice] 1#1: start worker process 27
+2023/10/12 23:09:12 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/10/12 23:09:12 [notice] 20#20: gracefully shutting down
+2023/10/12 23:09:12 [notice] 24#24: gracefully shutting down
+2023/10/12 23:09:12 [notice] 20#20: exiting
+2023/10/12 23:09:12 [notice] 24#24: exiting
+2023/10/12 23:09:12 [notice] 24#24: exit
+2023/10/12 23:09:12 [notice] 20#20: exit
+2023/10/12 23:09:12 [notice] 27#27: gracefully shutting down
+2023/10/12 23:09:12 [notice] 27#27: exiting
+2023/10/12 23:09:12 [notice] 27#27: exit
+2023/10/12 23:09:12 [notice] 22#22: gracefully shutting down
+2023/10/12 23:09:12 [notice] 22#22: exiting
+2023/10/12 23:09:12 [notice] 25#25: gracefully shutting down
+2023/10/12 23:09:12 [notice] 25#25: exiting
+2023/10/12 23:09:12 [notice] 25#25: exit
+2023/10/12 23:09:12 [notice] 26#26: gracefully shutting down
+2023/10/12 23:09:12 [notice] 26#26: exiting
+2023/10/12 23:09:12 [notice] 26#26: exit
+2023/10/12 23:09:12 [notice] 22#22: exit
+2023/10/12 23:09:12 [notice] 21#21: gracefully shutting down
+2023/10/12 23:09:12 [notice] 21#21: exiting
+2023/10/12 23:09:12 [notice] 21#21: exit
+2023/10/12 23:09:12 [notice] 23#23: gracefully shutting down
+2023/10/12 23:09:12 [notice] 23#23: exiting
+2023/10/12 23:09:12 [notice] 23#23: exit
+2023/10/12 23:09:12 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/10/12 23:09:12 [notice] 1#1: worker process 21 exited with code 0
+2023/10/12 23:09:12 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/12 23:09:12 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/10/12 23:09:12 [notice] 1#1: worker process 23 exited with code 0
+2023/10/12 23:09:12 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/12 23:09:12 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/10/12 23:09:12 [notice] 1#1: worker process 20 exited with code 0
+2023/10/12 23:09:12 [notice] 1#1: worker process 22 exited with code 0
+2023/10/12 23:09:12 [notice] 1#1: worker process 24 exited with code 0
+2023/10/12 23:09:12 [notice] 1#1: worker process 25 exited with code 0
+2023/10/12 23:09:12 [notice] 1#1: worker process 26 exited with code 0
+2023/10/12 23:09:12 [notice] 1#1: worker process 27 exited with code 0
+2023/10/12 23:09:12 [notice] 1#1: exit
+2023/10/13 09:18:45 [notice] 1#1: using the "epoll" event method
+2023/10/13 09:18:45 [notice] 1#1: nginx/1.25.2
+2023/10/13 09:18:45 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/10/13 09:18:45 [notice] 1#1: OS: Linux 6.2.0-34-generic
+2023/10/13 09:18:45 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/10/13 09:18:45 [notice] 1#1: start worker processes
+2023/10/13 09:18:45 [notice] 1#1: start worker process 20
+2023/10/13 09:18:45 [notice] 1#1: start worker process 21
+2023/10/13 09:18:45 [notice] 1#1: start worker process 22
+2023/10/13 09:18:45 [notice] 1#1: start worker process 23
+2023/10/13 09:18:45 [notice] 1#1: start worker process 24
+2023/10/13 09:18:45 [notice] 1#1: start worker process 25
+2023/10/13 09:18:45 [notice] 1#1: start worker process 26
+2023/10/13 09:18:45 [notice] 1#1: start worker process 27
+2023/10/13 13:10:59 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/10/13 13:10:59 [notice] 20#20: gracefully shutting down
+2023/10/13 13:10:59 [notice] 20#20: exiting
+2023/10/13 13:10:59 [notice] 20#20: exit
+2023/10/13 13:10:59 [notice] 21#21: gracefully shutting down
+2023/10/13 13:10:59 [notice] 21#21: exiting
+2023/10/13 13:10:59 [notice] 21#21: exit
+2023/10/13 13:10:59 [notice] 22#22: gracefully shutting down
+2023/10/13 13:10:59 [notice] 22#22: exiting
+2023/10/13 13:10:59 [notice] 22#22: exit
+2023/10/13 13:10:59 [notice] 24#24: gracefully shutting down
+2023/10/13 13:10:59 [notice] 24#24: exiting
+2023/10/13 13:10:59 [notice] 24#24: exit
+2023/10/13 13:10:59 [notice] 27#27: gracefully shutting down
+2023/10/13 13:10:59 [notice] 27#27: exiting
+2023/10/13 13:10:59 [notice] 27#27: exit
+2023/10/13 13:10:59 [notice] 23#23: gracefully shutting down
+2023/10/13 13:10:59 [notice] 23#23: exiting
+2023/10/13 13:10:59 [notice] 23#23: exit
+2023/10/13 13:10:59 [notice] 25#25: gracefully shutting down
+2023/10/13 13:10:59 [notice] 26#26: gracefully shutting down
+2023/10/13 13:10:59 [notice] 26#26: exiting
+2023/10/13 13:10:59 [notice] 26#26: exit
+2023/10/13 13:10:59 [notice] 25#25: exiting
+2023/10/13 13:10:59 [notice] 25#25: exit
+2023/10/13 13:10:59 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/10/13 13:10:59 [notice] 1#1: worker process 22 exited with code 0
+2023/10/13 13:10:59 [notice] 1#1: worker process 20 exited with code 0
+2023/10/13 13:10:59 [notice] 1#1: worker process 21 exited with code 0
+2023/10/13 13:10:59 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/13 13:10:59 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/10/13 13:10:59 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/10/13 13:10:59 [notice] 1#1: worker process 27 exited with code 0
+2023/10/13 13:10:59 [notice] 1#1: worker process 24 exited with code 0
+2023/10/13 13:10:59 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/13 13:10:59 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/10/13 13:10:59 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/10/13 13:10:59 [notice] 1#1: worker process 23 exited with code 0
+2023/10/13 13:10:59 [notice] 1#1: worker process 25 exited with code 0
+2023/10/13 13:10:59 [notice] 1#1: worker process 26 exited with code 0
+2023/10/13 13:10:59 [notice] 1#1: exit
+2023/10/13 14:04:56 [notice] 1#1: using the "epoll" event method
+2023/10/13 14:04:56 [notice] 1#1: nginx/1.25.2
+2023/10/13 14:04:56 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/10/13 14:04:56 [notice] 1#1: OS: Linux 6.2.0-34-generic
+2023/10/13 14:04:56 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/10/13 14:04:56 [notice] 1#1: start worker processes
+2023/10/13 14:04:56 [notice] 1#1: start worker process 19
+2023/10/13 14:04:56 [notice] 1#1: start worker process 20
+2023/10/13 14:04:56 [notice] 1#1: start worker process 21
+2023/10/13 14:04:56 [notice] 1#1: start worker process 22
+2023/10/13 14:04:56 [notice] 1#1: start worker process 23
+2023/10/13 14:04:56 [notice] 1#1: start worker process 24
+2023/10/13 14:04:56 [notice] 1#1: start worker process 25
+2023/10/13 14:04:56 [notice] 1#1: start worker process 26
+2023/10/13 14:25:01 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/10/13 14:25:01 [notice] 20#20: gracefully shutting down
+2023/10/13 14:25:01 [notice] 20#20: exiting
+2023/10/13 14:25:01 [notice] 19#19: gracefully shutting down
+2023/10/13 14:25:01 [notice] 26#26: gracefully shutting down
+2023/10/13 14:25:01 [notice] 20#20: exit
+2023/10/13 14:25:01 [notice] 19#19: exiting
+2023/10/13 14:25:01 [notice] 26#26: exiting
+2023/10/13 14:25:01 [notice] 19#19: exit
+2023/10/13 14:25:01 [notice] 26#26: exit
+2023/10/13 14:25:01 [notice] 22#22: gracefully shutting down
+2023/10/13 14:25:01 [notice] 22#22: exiting
+2023/10/13 14:25:01 [notice] 25#25: gracefully shutting down
+2023/10/13 14:25:01 [notice] 22#22: exit
+2023/10/13 14:25:01 [notice] 25#25: exiting
+2023/10/13 14:25:01 [notice] 25#25: exit
+2023/10/13 14:25:01 [notice] 21#21: gracefully shutting down
+2023/10/13 14:25:01 [notice] 21#21: exiting
+2023/10/13 14:25:01 [notice] 23#23: gracefully shutting down
+2023/10/13 14:25:01 [notice] 23#23: exiting
+2023/10/13 14:25:01 [notice] 21#21: exit
+2023/10/13 14:25:01 [notice] 23#23: exit
+2023/10/13 14:25:01 [notice] 24#24: gracefully shutting down
+2023/10/13 14:25:01 [notice] 24#24: exiting
+2023/10/13 14:25:01 [notice] 24#24: exit
+2023/10/13 14:25:01 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/10/13 14:25:01 [notice] 1#1: worker process 21 exited with code 0
+2023/10/13 14:25:01 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/13 14:25:01 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/10/13 14:25:01 [notice] 1#1: worker process 22 exited with code 0
+2023/10/13 14:25:01 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/13 14:25:01 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/10/13 14:25:01 [notice] 1#1: worker process 25 exited with code 0
+2023/10/13 14:25:01 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/13 14:25:01 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/10/13 14:25:01 [notice] 1#1: worker process 23 exited with code 0
+2023/10/13 14:25:01 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/13 14:25:01 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/10/13 14:25:01 [notice] 1#1: worker process 24 exited with code 0
+2023/10/13 14:25:01 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/13 14:25:01 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2023/10/13 14:25:01 [notice] 1#1: worker process 19 exited with code 0
+2023/10/13 14:25:01 [notice] 1#1: worker process 26 exited with code 0
+2023/10/13 14:25:01 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/13 14:25:01 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/10/13 14:25:01 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/10/13 14:25:01 [notice] 1#1: worker process 20 exited with code 0
+2023/10/13 14:25:01 [notice] 1#1: exit
+2023/10/13 16:48:53 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:48:54 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:48:54 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:48:55 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:48:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:48:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:49:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:49:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:49:21 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:49:47 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:50:39 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:51:39 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:52:40 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:53:40 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:54:40 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:55:41 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:56:41 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:57:42 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:58:42 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 16:59:42 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:00:43 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:01:43 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:02:44 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:03:44 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:04:44 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:05:45 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:06:45 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:07:45 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:08:46 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:09:46 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:10:46 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:11:47 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:12:47 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:13:47 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:14:48 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:15:48 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:16:49 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:17:49 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:18:49 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:19:50 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:20:50 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:21:50 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:22:51 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:23:51 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:24:51 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:25:52 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:26:52 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:27:52 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:28:53 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:29:53 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:30:54 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:31:54 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:32:54 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:33:55 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:34:55 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:35:55 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:36:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:37:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:38:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:39:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:40:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:41:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:42:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:43:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:44:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:45:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:46:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:48:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:49:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 17:50:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:28:25 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:28:25 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:28:26 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:28:27 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:28:28 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:28:30 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:28:33 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:28:40 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:28:53 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:29:19 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:30:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:31:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:32:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:33:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:34:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:35:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:36:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:37:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:38:14 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:39:14 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:40:15 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:41:15 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:42:16 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:43:16 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:44:16 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:45:17 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:46:17 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:47:17 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:48:18 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:49:18 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:50:18 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:51:19 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:52:19 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:53:19 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:54:20 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:55:20 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:56:21 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:57:21 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:58:21 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 18:59:22 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:00:22 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:01:22 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:02:23 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:03:23 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:04:24 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:05:24 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:06:24 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:07:25 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:08:25 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:09:25 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:10:26 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:11:26 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:12:26 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:13:27 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:14:27 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:15:28 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:16:28 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:17:28 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:18:29 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:19:29 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:20:29 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:21:30 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:22:30 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:23:30 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:24:31 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:25:31 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:26:31 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:27:32 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:28:32 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:29:32 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:30:33 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:31:33 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:32:34 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:33:34 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:34:34 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:35:35 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:36:35 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:37:35 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:38:36 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:39:36 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:40:36 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:41:38 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:42:39 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:43:40 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:44:41 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/13 19:45:41 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:04:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:04:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:04:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:04:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:04:14 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:04:16 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:04:19 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:04:26 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:04:39 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:05:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:05:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:06:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:07:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:08:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:09:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:10:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:11:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:12:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:13:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:15:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:16:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:17:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:18:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:19:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:20:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:21:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:22:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:23:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:24:03 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:25:03 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:26:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:27:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:28:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:29:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:30:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:31:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:32:06 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:33:06 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:34:06 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:35:07 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:36:07 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:37:07 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:38:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:39:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:40:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:41:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:42:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:43:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:44:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:45:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:46:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:47:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:48:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:49:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:50:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:51:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:52:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:53:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:54:14 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:55:14 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:56:14 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:57:15 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:58:15 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 10:59:16 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:00:16 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:01:16 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:02:17 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:03:17 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:04:17 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:05:18 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:06:18 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:07:18 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:08:19 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:09:19 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:10:19 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:11:20 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:12:20 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:13:20 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:14:21 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:15:21 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:16:21 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:17:22 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:18:22 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:19:22 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:20:23 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:21:23 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:22:24 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:23:24 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:24:24 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:25:25 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:26:25 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:27:25 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:28:26 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:29:26 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:30:26 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:31:27 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:32:27 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:33:27 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:34:28 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:35:28 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:36:29 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:37:29 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:38:29 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:39:30 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:40:30 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:41:30 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:42:31 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:43:31 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:44:31 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:45:32 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:46:32 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:47:32 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:48:33 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:49:33 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:50:34 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:51:34 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:52:34 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:53:35 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:54:35 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:55:35 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:56:36 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:57:36 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:58:37 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 11:59:37 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:00:38 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:01:38 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:02:38 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:03:39 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:04:39 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:05:39 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:06:40 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:07:40 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:08:40 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:09:41 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:10:41 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:11:41 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:12:42 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:13:42 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:14:43 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:15:43 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:16:43 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:17:44 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:18:44 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:19:44 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:20:45 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:21:45 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:22:45 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:23:46 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:24:46 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:25:46 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:26:47 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:27:47 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:28:48 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:29:48 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:30:48 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:31:49 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:32:49 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:33:50 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:34:50 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:35:50 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:36:51 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 12:37:51 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:02:54 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:03:54 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:04:55 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:05:55 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:06:55 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:07:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:08:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:09:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:10:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:11:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:12:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:13:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:14:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:15:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:16:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:17:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:19:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:20:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:21:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:22:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:23:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:24:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:25:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:26:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:27:03 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:28:03 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:29:03 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:30:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:31:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:32:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:33:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:34:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:35:06 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:36:06 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:37:06 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:38:07 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:39:07 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:40:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:41:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:42:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:43:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:44:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:45:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:46:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:47:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:48:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:49:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:50:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:51:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:52:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:53:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:54:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:55:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:56:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:57:14 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:58:14 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 13:59:14 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 14:00:15 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 14:01:15 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 14:02:15 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 14:03:16 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 14:04:16 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 14:05:16 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:27:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:27:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:27:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:27:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:27:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:27:15 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:27:19 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:27:25 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:27:38 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:28:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:28:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:29:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:30:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:31:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:32:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:33:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:34:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:35:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:36:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:37:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:38:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:39:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:41:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:42:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:43:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:44:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:45:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:46:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:47:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:48:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:49:03 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:50:03 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:51:03 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:52:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:53:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:54:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:55:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:56:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:57:06 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:58:06 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 16:59:06 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:00:07 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:01:07 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:02:07 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:03:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:04:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:05:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:06:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:07:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:08:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:09:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:10:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:11:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:12:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:13:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:14:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:15:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:16:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:17:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:18:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:19:14 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:20:14 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:21:14 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:22:15 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:23:15 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:24:15 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:25:33 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:25:33 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:25:34 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:25:35 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:25:36 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:25:38 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:25:41 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:25:48 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:26:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:26:27 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:27:19 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:28:19 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:29:19 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:30:20 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:31:20 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:32:20 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:33:21 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:34:21 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:35:21 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:36:22 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:37:22 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:38:22 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:39:23 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:40:23 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:41:23 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:42:24 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:43:24 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:44:25 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:45:25 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:46:25 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:47:25 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:48:26 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:49:26 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:50:27 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:51:27 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:52:27 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:53:28 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:54:28 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:55:28 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:56:29 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:57:29 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:58:29 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 17:59:30 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:00:30 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:01:30 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:02:31 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:03:31 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:04:31 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:05:32 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:06:32 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:07:32 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:08:33 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:09:33 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:10:34 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:11:34 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:12:35 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:13:35 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:14:35 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:15:36 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:16:36 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:17:36 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:18:37 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:19:37 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:20:37 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:21:38 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:22:38 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:23:38 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:24:39 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:25:39 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:26:39 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:27:40 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:28:40 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:29:40 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:30:41 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:31:41 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:32:41 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:33:42 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:34:42 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:35:42 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:36:43 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:37:43 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:38:44 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:39:44 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:40:44 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:41:45 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:42:45 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:43:45 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:44:46 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:45:46 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:46:46 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:47:47 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:48:47 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:49:47 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:50:48 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:51:48 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:52:48 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:53:49 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:54:49 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:55:50 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:56:50 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:57:50 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:58:51 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 18:59:51 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:00:51 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:31:54 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:31:55 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:31:55 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:31:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:31:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:31:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:32:03 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:32:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:32:22 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:32:48 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:33:40 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:34:40 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:35:40 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:36:41 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:37:41 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:38:41 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:39:42 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:40:42 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:41:42 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:42:43 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:43:43 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:44:43 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:45:44 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:46:44 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:47:44 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:48:45 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:49:45 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:50:45 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:51:46 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:52:46 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:53:46 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:54:47 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:55:47 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:56:47 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:57:48 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:58:48 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 19:59:48 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:00:49 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:01:49 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:02:49 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:03:50 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:04:50 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:05:50 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:06:51 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:07:51 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:08:52 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:09:52 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:10:52 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:11:53 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:12:53 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:13:53 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:14:54 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:15:54 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:16:54 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:17:55 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:18:55 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:19:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:20:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:21:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:22:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:23:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:24:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:25:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:26:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:27:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:28:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:29:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:30:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:32:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:33:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:34:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:35:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:36:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:37:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:38:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:39:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:40:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:41:03 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:42:03 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:43:03 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:44:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:45:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:46:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:47:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:48:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:49:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:50:06 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:51:06 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:52:06 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:53:07 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:54:07 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:55:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:56:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:57:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:58:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 20:59:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:00:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:01:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:02:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:03:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:04:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:05:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:06:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:07:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:50:53 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:51:53 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:52:53 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:53:54 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:54:54 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:55:54 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:56:55 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:57:55 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:58:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 21:59:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:00:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:01:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:02:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:03:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:04:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:05:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:06:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:07:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:08:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:10:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:11:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:12:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:13:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:14:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:15:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:16:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:17:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:18:03 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:19:03 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:20:03 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:21:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:22:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:23:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:24:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:25:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:26:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:27:06 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:28:06 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:29:07 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:30:07 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:31:07 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:32:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:33:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:34:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:35:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:36:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:37:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:38:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:39:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:40:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:41:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:42:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:43:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:44:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:45:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:46:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:47:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:48:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:49:14 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:50:14 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:51:14 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:52:15 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:53:15 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:54:15 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:55:16 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:56:16 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:57:17 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/14 22:58:17 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:37:07 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:37:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:37:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:37:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:37:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:37:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:37:16 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:37:23 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:37:35 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:38:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:38:53 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:39:53 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:40:53 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:41:54 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:42:54 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:43:54 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:44:55 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:45:55 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:46:55 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:47:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:48:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:49:56 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:50:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:51:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:52:57 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:53:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:54:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:55:58 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:56:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:57:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 12:58:59 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:00:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:01:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:02:00 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:03:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:04:01 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:05:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:06:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:07:02 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:08:03 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:09:03 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:10:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:11:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:12:04 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:13:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:14:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:15:05 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:16:06 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:17:06 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:18:06 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:19:07 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:20:07 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:21:07 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:22:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:23:08 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:24:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:25:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:26:09 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:27:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:28:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:29:10 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:30:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:31:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:32:11 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:33:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:34:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:35:12 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:36:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:37:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:38:13 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:39:14 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:40:14 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:41:15 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:42:15 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:43:15 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:44:16 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:45:16 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:46:17 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:47:17 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:48:17 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:49:18 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:50:18 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:51:18 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:52:19 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:53:19 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:54:19 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:55:20 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:56:20 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:57:20 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:58:21 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 13:59:21 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 14:00:21 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 14:01:22 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 14:02:22 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 14:03:22 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 14:04:23 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 14:05:23 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 14:06:23 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 14:07:24 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 14:08:24 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 14:09:24 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 14:10:25 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2023/10/15 14:11:25 [emerg] 1#1: host not found in upstream "flask" in /etc/nginx/conf.d/nginx.conf:7
+2024/01/25 12:39:32 [notice] 1#1: using the "epoll" event method
+2024/01/25 12:39:32 [notice] 1#1: nginx/1.25.3
+2024/01/25 12:39:32 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/01/25 12:39:32 [notice] 1#1: OS: Linux 6.5.0-14-generic
+2024/01/25 12:39:32 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/01/25 12:39:32 [notice] 1#1: start worker processes
+2024/01/25 12:39:32 [notice] 1#1: start worker process 20
+2024/01/25 12:39:32 [notice] 1#1: start worker process 21
+2024/01/25 12:39:32 [notice] 1#1: start worker process 22
+2024/01/25 12:39:32 [notice] 1#1: start worker process 23
+2024/01/25 12:39:32 [notice] 1#1: start worker process 24
+2024/01/25 12:39:32 [notice] 1#1: start worker process 25
+2024/01/25 12:39:32 [notice] 1#1: start worker process 26
+2024/01/25 12:39:32 [notice] 1#1: start worker process 27
