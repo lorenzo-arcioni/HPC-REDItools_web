@@ -343,3 +343,9 @@ spawned uWSGI worker 1 (pid: 7, cores: 2)
 spawned uWSGI worker 2 (pid: 8, cores: 2)
 spawned uWSGI worker 3 (pid: 10, cores: 2)
 spawned uWSGI worker 4 (pid: 12, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
