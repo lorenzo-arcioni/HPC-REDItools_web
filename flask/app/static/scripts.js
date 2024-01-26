@@ -44,23 +44,23 @@ function toggleConfigurationPanel() {
         slurmConfPanel.style.display = "block";
         noneConfPanel.style.display = "none";
         htcondorConfPanel.style.display = "none";
-        for (var i = 0; i < python_exec_path.length; i++) {
-            python_exec_path[i].style.display = "none";
-        }
+        //for (var i = 0; i < python_exec_path.length; i++) {
+        //    python_exec_path[i].style.display = "none";
+        //}
     } else if (noneRadio && noneRadio.checked) {
         slurmConfPanel.style.display = "none";
         noneConfPanel.style.display = "block";
         htcondorConfPanel.style.display = "none";
-        for (var i = 0; i < python_exec_path.length; i++) {
-            python_exec_path[i].style.display = "none";
-        }
+        //for (var i = 0; i < python_exec_path.length; i++) {
+        //    python_exec_path[i].style.display = "none";
+        //}
     } else if (htcondorRadio && htcondorRadio.checked) {
         slurmConfPanel.style.display = "none";
         noneConfPanel.style.display = "none";
         htcondorConfPanel.style.display = "block";
-        for (var i = 0; i < python_exec_path.length; i++) {
-            python_exec_path[i].style.display = "block";
-        }
+        //for (var i = 0; i < python_exec_path.length; i++) {
+        //    python_exec_path[i].style.display = "block";
+        //}
     }
 }
 function toggleAdvancedoptions() {

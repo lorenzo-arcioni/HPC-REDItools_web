@@ -54,17 +54,10 @@ def main():
 				script.write(header) # Workload manager header
 				script.write("#SBATCH --cpus-per-task=" + str(threads) + '\n')
 				script.write("#SBATCH --job-name=PA_proc-" + str(idx) + '\n')
-				script.write("/usr/bin/time -f \"%e\" python -m reditools \"" + str(inputdir + "/" + bam_file) + \
-										"\" -r " + str(reference) + " -o ../\"" + bam_file + "\".reditools.tsv -t " + \
-										str(threads))
-			elif wlm == "htcondor":
-				script.write("/usr/bin/time -f \"%e\" " + str(executable) + " -m reditools \"" + str(inputdir + "/" + bam_file) + \
-										"\" -r " + str(reference) + " -o ../\"" + bam_file + "\".reditools.tsv -t " + \
-										str(threads))
-			else:
-				script.write("/usr/bin/time -f \"%e\" python -m reditools \"" + str(inputdir + "/" + bam_file) + \
-										"\" -r " + str(reference) + " -o ../\"" + bam_file + "\".reditools.tsv -t " + \
-										str(threads))
+			
+			script.write("/usr/bin/time -f \"%e\" " + str(executable) + " -m reditools \"" + str(inputdir + "/" + bam_file) + \
+									"\" -r " + str(reference) + " -o ../\"" + bam_file + "\".reditools.tsv -t " + \
+									str(threads))
 			if bed_file != "":
 				script.write(" --bed_file \"" + str(bed_file) + "\"")
 			if splicing_file != "":
