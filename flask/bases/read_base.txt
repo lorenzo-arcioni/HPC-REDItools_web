@@ -26,6 +26,8 @@ def main():
 	additional_options  = "{}"
 	threads             = "{}"
 	wlm                 = "{}"
+	job_name            = "{}"
+
 
 	header = "{}"
 
@@ -53,7 +55,7 @@ def main():
 			if wlm == "slurm":
 				script.write(header) # Workload manager header
 				script.write("#SBATCH --cpus-per-task=" + str(threads) + '\n')
-				script.write("#SBATCH --job-name=PA_proc-" + str(idx) + '\n')
+				script.write("#SBATCH --job-name=" + job_name + "-" + str(idx) + '\n')
 			
 			script.write("/usr/bin/time -f \"%e\" " + str(executable) + " -m reditools \"" + str(inputdir + "/" + bam_file) + \
 									"\" -r " + str(reference) + " -o ../\"" + bam_file + "\".reditools.tsv -t " + \
@@ -78,7 +80,7 @@ def main():
 				sub.close()
 
 
-		sp.call("chmod 777 ./script.sh", shell=True)	 #Make executable the script
+		sp.call("chmod 777 ./script.sh", shell=True)	 # Make executable the script
 
 		#Run the script
 		if wlm == "slurm":
@@ -90,12 +92,16 @@ def main():
 
 		os.chdir("../")
 	os.chdir("../")
+
+	sp.call("chmod 777 ./control_script.sh", shell=True)	 # Make executable the script
 	
 	#Run the control script
 	if wlm == "slurm":
 		sp.call("sbatch ./control_script.sh", shell=True)
-	elif wlm == "htcondor" or wlm == "None":
+	elif wlm == "htcondor":
 		sp.call("nohup bash ./control_script.sh 1> control.out 2> control.err &", shell=True)
+	else:
+		sp.call("bash ./control_script.sh 1> control.out 2>control.err", shell=True)
 
 if __name__ == '__main__':
     sys.exit(main())

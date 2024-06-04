@@ -1,6 +1,6 @@
 inputpath="{}"
 threads={}
-python_exec={}
+python_exec="{}"
 reference="{}"
 #########################
 #Create input folder with input file inside

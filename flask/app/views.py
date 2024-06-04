@@ -5,6 +5,7 @@ import string
 import os
 import subprocess as sp
 import shutil as sh
+import time
 
 @app.route("/index.html", methods=['GET', 'POST'])
 @app.route("/", methods=['GET', 'POST'])
@@ -43,7 +44,7 @@ def start():
 
             if data_dic['wlm'] == 'slurm':
 
-                start.write("#SBATCH --job-name=PA_proc_start" + '\n')
+                start.write("#SBATCH --job-name=Start-" + data_dic['job_name'] + '\n')
                 start.write("#SBATCH --output=general.out" + '\n')
                 start.write("#SBATCH --error=general.err" + '\n')
                 start.write("#SBATCH --nodes=1" + '\n')
@@ -101,6 +102,7 @@ def start():
                                                                     data_dic["threads"],
                                                                     data_dic["wlm"],
                                                                     wlm_header.replace("\n", "\\n"),
+                                                                    data_dic["job_name"]
                                                                    ))
             read.close()
     
@@ -126,16 +128,37 @@ def start():
                 # Open the controlscript_base.txt file in read mode
                 with open("../bases/controlscript_base.txt", "r") as f:
                     # Read the contents of controlscript_base.txt and format it with "sbatch"
-                    base = f.read().format("sbatch", "control_script.sh")
+                    base = f.read().format("#If my running time > 1 hours\n"+
+	                                       "        if [ $(( end_time - start_time )) -gt 3600 ]\n"+
+                                           "        then\n"+
+                                           "        #Launch my clone\n"+
+                                           "            sbatch ./control_script.sh\n"+
+                                           "            exit 0\n"+
+                                           "        fi\n\n")
                     # Write the formatted contents to control_script.sh
                     control.write(base)
                     f.close()
             
-            elif data_dic['wlm'] == 'htcondor' or data_dic['wlm'] == 'None':
+            elif data_dic['wlm'] == 'htcondor':
                 # Open the controlscript_base.txt file in read mode
                 with open("../bases/controlscript_base.txt", "r") as f:
                     # Read the contents of controlscript_base.txt and format it with "bash"
-                    base = f.read().format("bash", "control_script.sh")
+                    base = f.read().format("#If my running time > 1 hours\n"+
+	                                       "        if [ $(( end_time - start_time )) -gt 3600 ]\n"+
+                                           "        then\n"+
+                                           "        #Launch my clone\n"+
+                                           "            bash ./control_script.sh\n"+
+                                           "            exit 0\n"+
+                                           "        fi\n\n")
+                    # Write the formatted contents to control_script.sh
+                    control.write(base)
+                    f.close()
+
+            elif data_dic['wlm'] == 'None':
+                # Open the controlscript_base.txt file in read mode
+                with open("../bases/controlscript_base.txt", "r") as f:
+                    # Read the contents of controlscript_base.txt and format it with "bash"
+                    base = f.read().format("")
                     # Write the formatted contents to control_script.sh
                     control.write(base)
                     f.close()
@@ -156,9 +179,9 @@ def start():
         
         
         data_dic['wlm'] = request.form.get('workload_manager').lower()
-        data_dic['python_executable'] = "None"
         
         if data_dic['wlm'] == 'slurm':
+            data_dic['job_name'] = request.form.get('Slurm_job_name')
             data_dic['account_name'] = request.form.get('Slurm_account_name')
             data_dic['serial_part'] = request.form.get('Slurm_serial_part')
             data_dic['parallel_part'] = request.form.get('Slurm_parallel_part')
@@ -167,6 +190,7 @@ def start():
             data_dic['memory_per_process'] = request.form.get('Slurm_Mprocess')
 
         elif data_dic['wlm'] == 'htcondor':
+            data_dic['job_name'] = request.form.get('HTC_job_name')
             data_dic['HTC_universe_name'] = request.form.get('HTC_universe_name')
             data_dic['HTC_scheduler_name'] = request.form.get('HTC_scheduler_name')
             data_dic['HTC_accounting_group'] = request.form.get('HTC_accounting_group')
@@ -174,6 +198,7 @@ def start():
             data_dic['time'] = request.form.get('HTC_time')
             data_dic['memory_per_process'] = request.form.get('HTC_Mprocess')
         else:
+            data_dic['job_name'] = request.form.get('job_name')
             data_dic['wlm'] = 'None'
             data_dic['threads'] = request.form.get('threads')
         
@@ -192,15 +217,18 @@ def start():
 
         sp.run("chmod +x start.sh && chmod +x read.py && chmod +x control_script.sh", shell=True)
         sp.run("cp ../time_calculator.py .", shell=True)
-        sp.run("tar -cf hpc-reditools.tar read.py start.sh control_script.sh time_calculator.py", shell=True)
 
-        tar = open("./hpc-reditools.tar", "r")
+        tar_name = "hpc-reditools_" + data_dic['job_name'] + "-" + time.strftime("%Y.%m.%d-%H.%M.%S") + ".tar"
+
+        sp.run(f"tar -cf {tar_name} read.py start.sh control_script.sh time_calculator.py", shell=True)
+
+        tar = open(f"./{tar_name}", "r")
         tar.seek(0)
 
         os.chdir("../")
         sh.rmtree(tmp_dir)
 
-        return send_file(tar, as_attachment=True, attachment_filename='hpc-reditools.tar', mimetype='text/plain')
+        return send_file(tar, as_attachment=True, attachment_filename=tar_name, mimetype='text/plain')
     
     return render_template("start.html")
 
