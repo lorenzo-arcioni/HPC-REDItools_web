@@ -26,10 +26,8 @@ def main():
 	additional_options  = "{}"
 	threads             = "{}"
 	wlm                 = "{}"
+	header              = "{}"
 	job_name            = "{}"
-
-
-	header = "{}"
 
 	pwd           = os.getcwd() # Get current path
 	pwd = tmpdir  = os.path.join(pwd, "tmp") # Add to path the directory name
