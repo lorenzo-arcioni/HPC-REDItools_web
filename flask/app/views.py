@@ -115,7 +115,7 @@ def start():
 
             if data_dic['wlm'] == 'slurm':
                 
-                control.write("#SBATCH --job-name=PA_proc-control" + '\n')
+                control.write("#SBATCH --job-name=Control-" + data_dic['job_name'] + '\n')
                 control.write("#SBATCH --output=control.out" + '\n')
                 control.write("#SBATCH --error=control.err" + '\n')
                 control.write("#SBATCH --nodes=1" + '\n')
