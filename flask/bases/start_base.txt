@@ -8,12 +8,12 @@ reference="{}"
 #Get all the headers and put them in headers file
 #########################
 
-$python_exec -m reditools -h 1>/dev/null
+$python_exec -m reditools -h 1>/dev/null 2>>./start.err
 
 
 if [ $? -gt 0 ]
     then
-        echo "Some errors are occurred. Please check them in start error file (.err)"
+        echo "Some errors are occurred. Please check them in start error file (start.err)"
     exit 1
 fi
 

@@ -45,8 +45,8 @@ def start():
             if data_dic['wlm'] == 'slurm':
 
                 start.write("#SBATCH --job-name=Start-" + data_dic['job_name'] + '\n')
-                start.write("#SBATCH --output=general.out" + '\n')
-                start.write("#SBATCH --error=general.err" + '\n')
+                start.write("#SBATCH --output=start.out" + '\n')
+                start.write("#SBATCH --error=start.err" + '\n')
                 start.write("#SBATCH --nodes=1" + '\n')
                 start.write("#SBATCH --ntasks=1" + '\n')
                 start.write("#SBATCH --cpus-per-task=1" + '\n')
@@ -234,11 +234,11 @@ def start():
 
 @app.route('/architecture.html')
 def architecture():
-    # Help page
+    # Architecture page
     return render_template("architecture.html")
 
 
-@app.route('/download.html')
-def download():
-    # Help page
-    return render_template("download.html")
+# @app.route('/download.html')
+# def download():
+#     # Help page
+#     return render_template("download.html")
