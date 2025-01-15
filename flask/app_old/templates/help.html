@@ -23,16 +23,14 @@
     <div class="title">
         <div class="best" style="display: flex; align-items: center;">
             <img src="../static/logo.png" width="100" style="margin: auto;">
-            <h1>Web-REDItools</h1>
-            <img src="../static/logo2.png" width="100" style="margin: auto;">
+            <h1>HPC-REDItools</h1>
+            <img src="../static/logo.png" width="100" style="margin: auto;">
         </div>
         <h2 id="subtitle">Interface Guide</h2>
     </div>
 
     <div class="description">
-        <p>This guide will assist you in understanding and utilizing the interface's features to configure and generate a customized software package for parallelization tasks involving annotation software. Follow the steps below to efficiently navigate and use Web-REDItools.
-
-</p>
+        <p>Welcome to the user guide for the HPC-REDItools interface. This guide will help you understand and utilize the features of the interface to configure and generate a customized software package for parallelization tasks involving annotation software. Follow the steps below to effectively use the interface.</p>
     </div>
     <div class="block">
         <h3>Step 1: Workload Manager Settings</h3>
@@ -66,8 +64,8 @@
                 <li><strong>Serial partition</strong>: Enter the name of the serial partition for single-threaded jobs.</li>
                 <li><strong>Parallel partition</strong>: Provide the name of the parallel partition for multi-threaded jobs.</li>
                 <li><strong>Number of threads</strong>: Define the number of threads per process.</li>
-                <li><strong>Wall-time(hours)</strong>: Specify the maximum duration of the job in hours</li>
-                <li><strong>Memory per process:</strong> Enter the memory requirement per process (GB).</li>
+                <li><strong>Wall-time(hours)</strong>: Specify the maximum duration of the job in hours.</li>
+                <li><strong>Memory per process:</strong> Enter the memory requirement per process.</li>
             </ul>
         </div>
 
@@ -159,8 +157,8 @@
     <div class="block">
         <h3>Extract the TAR archive and run</h3>
         <div>
-            <p>The TAR archive must be uploaded on HPC cluster, decompressed and, finally, the user can run the start 
-               script (start.sh).
+            <p>After downloading the TAR archive (and, if you want, uploading the archive on HPC cluster) you have to unTAR the archive and then run the start 
+               script.
             </p>
         </div>
         <div class="code-cell">
@@ -175,13 +173,6 @@
         <div class="code-cell">
             nohup bash start.sh 1> start.out 2> start.err &
         </div>
-
-        <p>If you are on a server node or on a workstation without any workload manager</p>
-        <div class="code-cell">
-		chmod 777 start.sh <BR>
-            ./start.sh 1> start.out 2> start.err &
-        </div>
-
     </div>
     <div class="description">  
         <p style="text-align: center;">Once the entire computation process has ended (check the general.log file for the status), the final results will be in tmp/*.tsv files.</p>
@@ -198,9 +189,9 @@
         <p>That will display something like this:</p>
         <div class="code-cell">
             Starting timestamp#2023-09-16 14:03:14<br>
-            Input files path: /input/file/path/BAM<br>
+            Input files path: /g100_scratch/userexternal/larcioni/BAM<br>
             Processes: 24<br>
-            Reference: /input/file/path/test_mm10_bam/ref/genome.fa<br>
+            Reference: /g100_scratch/userexternal/larcioni/test_mm10_bam/ref/genome.fa<br>
             Chromosomes: 22<br>
             Average runtime: 0:08:36<br><br>
 

@@ -23,15 +23,15 @@
         <div class="title">
             <div class="best" style="display: flex; align-items: center;">
                 <img src="../static/logo.png" width="100" style="margin: auto;">
-                <h1>Web-REDItools</h1>
-                <img src="../static/logo2.png" width="100" style="margin: auto;">
+                <h1>HPC-REDItools</h1>
+                <img src="../static/logo.png" width="100" style="margin: auto;">
             </div>
-            <h2 id="subtitle"></h2>
+            <h2 id="subtitle">Generative Interface</h2>
         </div>
 
         <div class="description">
-            <p>To generate the parallel HPC software for the RNA-editing analysis, 
-               please complete the two panels below: one pertaining to the settings of the workload manager, 
+            <p>To generate the parallel software for the RNA-editing analysis, 
+               please complete the two forms below: one pertaining to the settings of the workload manager, 
                and the other concerning the details of the REDItools software package.</p>
         </div>
         
@@ -66,7 +66,7 @@
                         <br>
                         <br>
                         <label for="Slurm_account_name"><b>Account name:</b> </label>
-                        <input type="text" name="Slurm_account_name" id="Slurm_account_name" placeholder="ELIX_account_name">
+                        <input type="text" name="Slurm_account_name" id="Slurm_account_name" placeholder="ELIX5_mastrant">
                         Specify the name of the account for job submission.
                         <br>
                         <br>
@@ -150,23 +150,23 @@
             <div class="block" style="display: grid; grid-template-columns: auto 1fr; gap: 20px;">
                 <div>
                     <div style="display: flex;">
-                        <h3>Web-REDItools software settings</h3>
+                        <h3>REDItools Software settings</h3>
                         <button class="help_settings" id="help_redi" type="button">
                             <p style="margin-top: -1px; font-size: large;">?</p>
                         </button>
                     </div>
                     <div class="SAT">
                         <label for="Part">Input directory absolute path</label><br>
-                        <input class="long_input" type="text" name="ID_path" id="IF_path" size="110" placeholder="/data/organism/directory_input_data/">
+                        <input class="long_input" type="text" name="ID_path" id="IF_path" size="110">
                         <br>
                         <br>
                         <label for="Part">Absolute path to the reference genome</label><br>
-                        <input class="long_input" type="text" name="REF_path" id="REF_path" size="110" placeholder="/data/organism/directory_genome/genome.fna">
+                        <input class="long_input" type="text" name="REF_path" id="REF_path" size="110">
                         <br>
                         <br>
                         <div name="EX_path">
                         <label for="Part">Python executable path</label><br>
-                        <input class="long_input" type="text" name="EX_path" id="EX_path" size="110" placeholder="/bin/Python-3.12.6/python">
+                        <input class="long_input" type="text" name="EX_path" id="EX_path" size="110">
                         <br>
                         <br>
                         </div>
@@ -177,15 +177,15 @@
                     </div>
                     <div class="SAT" id="advanced_options" style="display: none;">
                         <label for="Part">Absolute path of BED file containing target regions</label><br>
-                        <input class="long_input" type="text" name="BED_path" id="BED_path" size="110" placeholder="/data/organism/bed_file/regions_of_interest.bed">
+                        <input class="long_input" type="text" name="BED_path" id="BED_path" size="110">
                         <br>
                         <br>
                         <label for="Part">Absolute path to the file containing the splicing sites positions</label><br>
-                        <input class="long_input" type="text" name="SP_path" id="SP_path" size="110" placeholder="/data/organism/bed_file/splice_position_file/file.bed">
+                        <input class="long_input" type="text" name="SP_path" id="SP_path" size="110">
                         <br>
                         <br>
                         <label for="Part">Absolute path to the file containing the omopolymeric positions</label><br>
-                        <input class="long_input" type="text" name="OMO_path" id="OMO_path" size="110" placeholder="/data/organism/bed_file/omo_file/file.bed">
+                        <input class="long_input" type="text" name="OMO_path" id="OMO_path" size="110">
                         <br>
                         <br>
                         <label for="Part">Additional options</label> 
@@ -197,7 +197,7 @@
                     </div>
                 </div>
                 <div class="icon" style="text-align: right;">
-                    <img src="../static/annotation.png" alt="Annotation" style="max-width: 250px;">
+                    <img src="../static/annotation.png" alt="Annotation" style="max-width: 150px;">
                 </div>
                 
             </div>
