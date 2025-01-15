@@ -17,3 +17,5 @@
 172.21.0.1 - - [15/Jan/2025:23:22:47 +0000] "GET /help.html HTTP/1.1" 200 12982 "http://localhost:49153/architecture.html" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0" "-"
 172.21.0.1 - - [15/Jan/2025:23:23:14 +0000] "GET /contacts.html HTTP/1.1" 200 1418 "http://localhost:49153/help.html" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0" "-"
 172.21.0.1 - - [15/Jan/2025:23:23:26 +0000] "GET /index.html HTTP/1.1" 200 2124 "http://localhost:49153/contacts.html" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0" "-"
+172.21.0.1 - - [15/Jan/2025:23:27:10 +0000] "GET /start.html HTTP/1.1" 200 12143 "http://localhost:49153/index.html" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0" "-"
+172.21.0.1 - - [15/Jan/2025:23:28:57 +0000] "POST /start.html HTTP/1.1" 200 20515 "http://localhost:49153/start.html" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0" "-"
