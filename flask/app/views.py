@@ -74,7 +74,7 @@ def start():
                         + "#SBATCH --mem=" + data_dic['memory_per_process'] + 'GB' + '\n' \
                         + "#SBATCH --output=general.out" + '\n' \
                         + "#SBATCH --error=general.err" + '\n' \
-                        + "#SBATCH --gres=tmpfs:200GB" + '\n' # 1TB of tmpfs for the job, to change if needed
+                        + "#SBATCH --gres=tmpfs:200GB" + '\n' # 200GB of tmpfs for the job, to change if needed
             
         elif data_dic['wlm'] == 'htcondor':
 
