@@ -73,8 +73,7 @@ def start():
                         + "#SBATCH --time=" + data_dic['time'] + ":00:00" + '\n' \
                         + "#SBATCH --mem=" + data_dic['memory_per_process'] + 'GB' + '\n' \
                         + "#SBATCH --output=general.out" + '\n' \
-                        + "#SBATCH --error=general.err" + '\n' \
-                        + "#SBATCH --gres=tmpfs:200GB" + '\n' # 200GB of tmpfs for the job, to change if needed
+                        + "#SBATCH --error=general.err" + '\n'
             
         elif data_dic['wlm'] == 'htcondor':
 
