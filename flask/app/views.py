@@ -202,7 +202,7 @@ def start():
             data_dic['wlm'] = 'None'
             data_dic['threads'] = request.form.get('threads')
         
-        data_dic['inputpath']           = request.form.get('ID_path')
+        data_dic['inputpath']           = request.form.get('ID_path')[:-1] if request.form.get('ID_path').endswith('/') else request.form.get('ID_path')
         data_dic['python_executable']   = request.form.get('EX_path')
         data_dic['reference']           = request.form.get('REF_path')
         data_dic['bed_file']            = request.form.get('BED_path')

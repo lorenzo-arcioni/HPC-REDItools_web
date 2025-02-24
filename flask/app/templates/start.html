@@ -82,7 +82,7 @@
                         <br>
                         <label for="Nthread"><b>Number of threads: </b></label>
                         <input type="number" name="Slurm_Nthreads" id="Slurm_Nthreads" style="width: 40px;" min=1 value=1>
-                        Define the number of threads per process.
+                        Define the number of threads per node.
                         <br>
                         <br>
                         <label for="Time"><b>Wall-time (hours):</b></label>
@@ -90,9 +90,9 @@
                         <U>Must be less then your parallel partition wall-time.</U>
                         <br>
                         <br>
-                        <label for="Mproces"><b>Memory per process (GB):</b></label>
-                        <input type="number" name="Slurm_Mprocess" id="Mprocess" style="width: 40px;" min=1 value=1>
-                        Enter the memory requirement per process.
+                        <label for="Mproces"><b>Memory per node (GB):</b></label>
+                        <input type="number" name="Slurm_Mprocess" id="Mprocess" style="width: 40px;" min=1 value=10>
+                        Enter the memory requirement per node.
                     </div>
 
                     <div class="conf" id="htcondorConfPanel" style="display: none;">
@@ -110,7 +110,7 @@
                         <br>
                         <label for="Nthread"><b>Number of threads: </b></label>
                         <input type="number" name="HTC_Nthreads" id="HTC_Nthreads" style="width: 40px;" min=1 value=1>
-                        Define the number of threads per process.
+                        Define the number of threads per node.
                         <br>
                         <br>
                         <label for="Time"><b>Wall-time (hours):</b></label>
@@ -118,9 +118,9 @@
                         <U>Must be less then your parallel partition wall-time.</U>
                         <br>
                         <br>
-                        <label for="Mproces"><b>Memory per process (GB):</b></label>
+                        <label for="Mproces"><b>Memory per node (GB):</b></label>
                         <input type="number" name="HTC_Mprocess" id="HTC_Mprocess" style="width: 40px;" min=1 value=1>
-                        Enter the memory requirement per process.
+                        Enter the memory requirement per node.
                     </div>
 
                     <div class="conf" id="noneConfPanel">
@@ -156,16 +156,28 @@
                         </button>
                     </div>
                     <div class="SAT">
-                        <label for="Part">Input directory absolute path</label><br>
+                        <label for="Part">Input directory absolute path</label>
+                        <button class="help_settings_small" id="help_bam" type="button">
+                            <p style="margin-top: -1px; font-size: large;">?</p>
+                        </button>
+                        <br>
                         <input class="long_input" type="text" name="ID_path" id="IF_path" size="110" placeholder="/data/organism/directory_input_data/">
                         <br>
                         <br>
-                        <label for="Part">Absolute path to the reference genome</label><br>
+                        <label for="Part">Absolute path to the reference genome</label>
+                        <button class="help_settings_small" id="help_ref" type="button">
+                            <p style="margin-top: -1px; font-size: large;">?</p>
+                        </button>
+                        <br>
                         <input class="long_input" type="text" name="REF_path" id="REF_path" size="110" placeholder="/data/organism/directory_genome/genome.fna">
                         <br>
                         <br>
                         <div name="EX_path">
-                        <label for="Part">Python executable path</label><br>
+                        <label for="Part">Python executable path</label>
+                        <button class="help_settings_small" id="help_exec" type="button">
+                            <p style="margin-top: -1px; font-size: large;">?</p>
+                        </button>
+                        <br>
                         <input class="long_input" type="text" name="EX_path" id="EX_path" size="110" placeholder="/bin/Python-3.12.6/python">
                         <br>
                         <br>

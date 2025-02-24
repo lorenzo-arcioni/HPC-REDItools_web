@@ -20,8 +20,21 @@ function initPage() {
     }
 
     var help_redi_v = document.getElementById("help_redi");
+    var help_bam_v = document.getElementById("help_bam");
+    var help_ref_v = document.getElementById("help_ref");
+    var help_exec_v = document.getElementById("help_exec");
+    
     if (help_redi_v) {
         help_redi_v.addEventListener("click", help_redi);
+    }
+    if (help_bam_v) {
+        help_bam_v.addEventListener("click", help_bam);
+    }
+    if (help_ref_v) {
+        help_ref_v.addEventListener("click", help_ref);
+    }
+    if (help_exec_v) {
+        help_exec_v.addEventListener("click", help_exec);
     }
 
     var help_workload_v = document.getElementById("help_workload");
@@ -110,4 +123,16 @@ function help_workload(){
 
 function help_redi(){
     window.alert("In this section, you can set the configuration of REDItools software. It is necessary to provide the input directory (absolute) path, the reference genome (absolute) path.");
+}
+
+function help_bam(){
+    window.alert("Here you have to insert the absolute path of the directory containing the input BAM files.");
+}
+
+function help_ref(){
+    window.alert("Here you have to insert the absolute path of the reference genome used to generate the BAM files.");
+}
+
+function help_exec(){
+    window.alert("Here you have to insert the absolute path of the Python executable where you want to run REDItools.");
 }

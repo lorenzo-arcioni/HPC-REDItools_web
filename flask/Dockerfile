@@ -11,9 +11,9 @@ ADD . /app
 RUN pip install -r requirements.txt
 
 # Create a uwsgi log directory and files
-RUN mkdir /var/log/uwsgi
-RUN touch /var/log/uwsgi/uwsgi_access.log
-RUN touch /var/log/uwsgi/uwsgi_error.log
+RUN mkdir -p /var/log/uwsgi && \
+    touch /var/log/uwsgi/uwsgi_access.log && \
+    touch /var/log/uwsgi/uwsgi_error.log
 
 # run the command to start uWSGI
 CMD ["uwsgi", "app.ini"]

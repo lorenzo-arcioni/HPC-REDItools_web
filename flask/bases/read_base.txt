@@ -56,7 +56,8 @@ def main():
 				script.write("#SBATCH --job-name=" + job_name + "-" + str(idx) + '\n')
 				script.write("export TMPDIR=$SCRATCH" + '\n')
 			
-			script.write("/usr/bin/time -f \"%e\" " + str(executable) + " -m reditools \"" + str(inputdir + "/" + bam_file) + \
+			# "/usr/bin/time -f \"%e\" " + 
+			script.write(str(executable) + " -m reditools analyze \"" + str(inputdir + "/" + bam_file) + \
 									"\" -r " + str(reference) + " -o ../\"" + bam_file + "\".reditools.tsv -t " + \
 									str(threads))
 			if bed_file != "":

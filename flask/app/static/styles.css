@@ -175,6 +175,13 @@ nav ul li a:hover {
     margin-left: 10px;
 }
 
+.help_settings_small{
+    height: 25px; 
+    width: 25px;
+    margin-top: 10px; 
+    margin-left: 5px;
+}
+
 .github-button {
     background-color: #333; /* Colore di sfondo */
     color: #fff; /* Colore del testo */
