@@ -54,7 +54,7 @@ def main():
 				script.write(header) # Workload manager header
 				script.write("#SBATCH --cpus-per-task=" + str(threads) + '\n')
 				script.write("#SBATCH --job-name=" + job_name + "-" + str(idx) + '\n')
-				script.write("export TMPDIR=$SCRATCH" + '\n')
+				#script.write("export TMPDIR=$SCRATCH" + '\n')
 			
 			# "/usr/bin/time -f \"%e\" " + 
 			script.write(str(executable) + " -m reditools analyze \"" + str(inputdir + "/" + bam_file) + \
